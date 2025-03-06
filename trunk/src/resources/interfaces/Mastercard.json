@@ -1,0 +1,83 @@
+[
+	{
+		"name": "MTI",
+		"index": "MTI",
+		"values": {
+			"0100": "Autorizacion",
+			"0120": "Advice",
+			"0200": "Financiero",
+			"0320": "File Update",
+			"0400": "Reverso",
+			"0420": "Advice Reverso",
+			"0600": "Administrativo",
+			"0620": "Advice Administrativo",
+			"0800": "Network Management Request",
+			"0820": "Network Management Advice"
+		}
+	},
+	{
+		"name": "Processing Code",
+		"index": "3.1",
+		"values": {
+			"00": "Compra",
+			"01": "Retiro",
+			"02": "Ajuste",
+			"09": "Cash Back",
+			"17": "Cash Disbursement",
+			"20": "Devolucion",
+			"28": "Pago",
+			"30": "Consulta de Saldo",
+			"40": "Transferencia",
+			"91": "Desbloqueo NIP",
+			"92": "Camboi NIP",
+			"93": "Card on File Token Processing"
+		}
+	},
+	{
+		"name": "Point-of-Service (POS) Entry Mode",
+		"index": "22.1",
+		"values": {
+			"00": "Entrada desconocido",
+			"01": "Entrada manual",
+			"02": "Lectura de banda, track no requerido",
+			"03": "Lectura de QR",
+			"04": "Lectura optica (OCR)",
+			"05": "Lectura de Chip Contacto",
+			"07": "Lectura de Chip sin Contacto (contactless)",
+			"09": "DSRP",
+			"10": "Credential on File",
+			"79": "Fallo en envio fallback",
+			"80": "Lectura de tarjeta banda (Fallback)",
+			"81": "Entrada manual(ecommerce)",
+			"82": "Servidor",
+			"90": "Lectura de banda",
+			"91": "Lectura de banda Contactless",
+			"95": "No se puede leer CVV (Solo VISA)"		
+		}
+	},
+	{
+		"name": "Network Management Information Code",
+		"index": "70",
+		"values": {
+				"001": "Sign on",
+				"002": "Sign off",
+				"061": "Group sign on",
+				"062": "Group sign off",
+				"063": "Group sign on alterno",
+				"064": "Group sign off alternato",
+				"065": "Prefix sign on (by Group Sign-on ID for primary route)",
+				"066": "Prefix sign on (by Group Sign-off ID for primary route)",
+				"067": "Prefix sign on (by Group Sign-on ID for alternate issuer route)",
+				"068": "Prefix sign on (by Group Sign-off ID for alternate issuer route)",
+				"270": "Echo test",
+				"081": "Host session activation",
+				"082": "Host session deactivation",
+				"161": "Intercambio de Llaves",
+				"162": "Solicitud de Intercambio de Llaves",
+				"163": "Solicitud de Intercambio de Llaves TR31",
+				"164": "Confirmacion de Intercambio de Llaves TR31",
+				"165": "Fallo de Intercambio de Llaves TR31",
+				"301": "Campo 70 - 301"
+	 }
+	}
+]
