@@ -1,0 +1,43 @@
+[
+	{
+		"name": "MTI",
+		"index": "MTI",
+		"values": {
+			"1100": "Autorizacion",
+			"1200": "Financiero",
+			"1220": "Notificacion",
+			"1420": "Reverso",
+			"1804": "Network Management Request"
+		}
+	},
+	{
+		"name": "Processing Code",
+		"index": "3",
+		"values": {
+			"064000": "AMEX Travelers Cheque Encashment",
+			"174800": "Transaction for AAV Only",
+			"004000": "Sale",
+			"004800": "Sale with AVV",
+			"220000": "Authorization Adjustment",
+			"204000": "Refund Advice",
+			"224000": "Refund Adjustment", 
+			"024000": "Sale Adjustment",
+			"000000": "Echo Message"
+		}
+	},
+	{
+		"name": "POS Entry Mode",
+		"index": "22.7",
+		"values": {
+			"0": "unknown",
+			"1": "Manual, no terminal",
+			"3": "Barcode",
+			"5": "Lectura de tarjeta Chip Contacto",
+			"6": "Key entered",
+			"9": "Fallback",
+			"A": "Credential on file",
+			"S": "Manually entered or keyed transaction with keyed CID/4DBC/4CSC",
+			"W": "Swiped transaction with keyed CID/4DBC/4CSC"
+		}
+	}
+]

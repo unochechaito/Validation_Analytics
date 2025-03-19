@@ -1,0 +1,172 @@
+[
+ {
+    "index": "0",
+    "name": "Header",
+    "lengthIndicator": "fixed",
+    "length": "24",
+    "format": "ASCII",
+    "subfields": [
+      {
+        "name": "FECHA-DE-CONCILIACION",
+        "lengthIndicator": "fixed",
+        "length": "6",
+        "format": "ASCII"
+      },
+      {
+        "name": "TIPO-DESC",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "SITE-ORIGEN",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "PERIODO",
+        "lengthIndicator": "fixed",
+        "length": "2",
+        "format": "ASCII"
+      },
+      {
+        "name": "SEQ",
+        "lengthIndicator": "fixed",
+        "length": "7",
+        "format": "ASCII"
+      },
+      {
+        "name": "ID-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "3",
+        "format": "ASCII"
+      },
+      {
+        "name": "LONGITUD-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "4",
+        "format": "ASCII"
+      }
+    ]
+  },
+  {
+    "index": "1",
+    "name": "Subfield 1 POS Terminal Attendance",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "2",
+    "name": "Subfield 2 Reserved for future use",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "3",
+    "name": "Subfield 3 POS Terminal Location",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "4",
+    "name": "Subfield 4 POS Card Holder Presence",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "5",
+    "name": "Subfield 5 POS Card Presence",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "6",
+    "name": "Subfield 6 POS Card Capture Capabilities",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "7",
+    "name": "Subfield 7 POS Transaction Status",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "8",
+    "name": "Subfield 8 POS Transaction Security",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "9",
+    "name": "'Subfield 9 Reserved for future use",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "10",
+    "name": "Subfield 10 Cardholder-activated Terminal Level",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "11",
+    "name": "Subfield 11 POS Card Data Terminal Input Capability Indicator",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "12",
+    "name": "Subfield 12 POS Authorization Life Cycle",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "13",
+    "name": "Subfield 13 POS Country Code",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "14",
+    "name": "Subfield 14 POS Postal Code",
+    "lengthIndicator": "fixed",
+    "length": "10",
+    "format": "ASCII"
+  },
+  {
+    "index": "15",
+    "name": "'CVC Level Indicator",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "16",
+    "name": "Auth Response Code",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "17",
+    "name": "Filler",
+    "lengthIndicator": "fixed",
+    "length": "91",
+    "format": "ASCII"
+  }
+]

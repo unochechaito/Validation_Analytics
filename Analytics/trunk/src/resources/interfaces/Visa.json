@@ -1,0 +1,86 @@
+[
+	{
+		"name": "MTI",
+		"index": "MTI",
+		"values": {
+			"0100": "Autorizacion",
+			"0120": "Advice",
+			"0200": "Financiero",
+			"0320": "Fiel Update",
+			"0400": "Reverso",
+			"0420": "Advice Reverso",
+			"0600": "Administrativo",
+			"0620": "Advice Administrativo",
+			"0800": "Network Management Request",
+			"0820": "Network Management Advice"
+		}
+	},
+	{
+		"name": "Processing Code",
+		"index": "3.1",
+		"values": {
+			"00": "Compra",
+			"01": "Retiro",
+			"02": "Ajuste Debito",
+			"10": "Fondos a la cuenta",
+			"11": "Quasi-Cash",
+			"19": "Cobro de tarifa Debito",
+			"20": "Devolucion",
+			"22": "Ajuste Credito",
+			"26": "Original Credit",
+			"28": "Pago",
+			"29": "Desembolso de Fondos Credito",
+			"30": "Consulta de Saldo",
+			"39": "Consulta de Elegibilidad",
+			"40": "Transferencia",
+			"50": "Pago de Factura", 
+			"53": "Pago",
+			"72": "Ativacion de Prepago"
+		}
+	},
+	{
+		"name": "Point-of-Service (POS) Entry Mode",
+		"index": "22.1",
+		"values": {
+			"00": "Entrada desconocido",
+			"01": "Entrada manual",
+			"02": "Lectura de banda, track no requerido",
+			"03": "Lectura de QR",
+			"04": "Reservado",
+			"05": "Lectura de Chip Contacto",
+			"07": "Lectura de Chip sin Contacto (contactless)",
+			"10": "Credential on File",
+			"81": "Store-and-forward",
+			"84": "Reservado",
+			"86": "Store-and-forward resubmission",
+			"90": "Lectura de banda",
+			"91": "Lectura de banda Contactless",
+			"95": "Circuito Integrado",
+			"96": "Almacenado por pre registro de Checkout"		
+		}
+	},
+	{
+		"name": "Network Management Information Code",
+		"index": "70",
+		"values": {
+				"064": "Red regional arriba",
+				"065": "Red regional abajp",
+				"071": "Sign on a V.I.P.",
+				"072": "Sign off de V.I.P.",
+				"078": "Iniciar transmision de advices",
+				"079": "Detener transmision de advices",
+				"081": "Sign on a V.I.P.",
+				"082": "Sign off de V.I.P.",
+				"088": "Iniciar transmision de advices",
+				"089": "Detener transmision de advices",
+				"101": "Solicitud de Intercambio de Llaves",
+				"160": "Solicitud de Intercambio de Llaves (adquirente al Switch)",
+				"161": "Intercambio de Llaves",
+				"162": "Solicitud de Intercambio de Llaves",
+				"163": "Solicitud de Intercambio de Llaves",
+				"164": "Actualizacion de llave adquirente",
+				"165": "Actualizacion de llave emisora",
+				"301": "Echo test"
+		}
+	}
+]

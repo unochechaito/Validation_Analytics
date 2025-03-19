@@ -1,0 +1,58 @@
+[
+    {
+        "index": 1,
+        "name": "Filler",
+        "lengthIndicator": "fixed",
+        "length": 55,
+        "format": "ASCII"
+    },
+    {
+        "index": 2,
+        "name": "Network Reference ID",
+        "lengthIndicator": "fixed",
+        "length": 15,
+        "format": "ASCII"
+    },
+    {
+        "index": 3,
+        "name": "Filler",
+        "lengthIndicator": "fixed",
+        "length": 75,
+        "format": "ASCII"
+    },
+    {
+        "index": 4,
+        "name": "POS TERMINAL DATA EMISOR",
+        "lengthIndicator": "fixed",
+        "length": 13,
+        "format": "ASCII"
+    },
+    {
+        "index": 5,
+        "name": "Bandera MAP",
+        "lengthIndicator": "fixed",
+        "length": 1,
+        "format": "ASCII"
+    },
+    {
+        "index": 6,
+        "name": "Filler",
+        "lengthIndicator": "fixed",
+        "length": 1,
+        "format": "ASCII"
+    },
+    {
+        "index": 7,
+        "name": "Filler",
+        "lengthIndicator": "fixed",
+        "length": 15,
+        "format": "ASCII"
+    },
+    {
+        "index": 8,
+        "name": "Filler",
+        "lengthIndicator": "fixed",
+        "length": 1,
+        "format": "ASCII"
+    }
+]

@@ -1,0 +1,613 @@
+[
+  {
+    "index": 0,
+    "name": "Header",
+    "lengthIndicator" : "fixed",
+    "length": 20,
+    "format": "ascii",
+    "subfields":[
+      {
+        "index": 0,
+        "name": "Message Type Identifier",
+        "lengthIndicator" : "fixed",
+        "length": 4,
+        "format": "ascii",
+        "subfields":[]
+      },
+      {
+        "index": 1,
+        "name": "Bit map",
+        "lengthIndicator" : "fixed",
+        "length": 16,
+        "format": "ascii",
+        "subfields":[]
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "name": "Secondary Bitmap",
+    "lengthIndicator" : "fixed",
+    "length": 16,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 2,
+    "name": "Primary Account Number (PAN)",
+    "lengthIndicator" : "LLVar",
+    "length": 19,
+    "format": "ASCII",
+    "subfields":[]
+  },
+  {
+    "index": 3,
+    "name": "Processing Code",
+    "lengthIndicator" : "fixed",
+    "length": 6,
+    "format": "ASCII",
+    "subfields":[
+      {
+      "index": 0,
+      "name": "1",
+      "lengthIndicator" : "fixed",
+      "length": 2,
+      "format": "ASCII",
+      "subfields":[]
+      },
+      {
+        "index": 1,
+        "name": "2",
+        "lengthIndicator" : "fixed",
+        "length": 2,
+        "format": "ASCII",
+        "subfields":[]
+      },
+      {
+        "index": 2,
+        "name": "3",
+        "lengthIndicator" : "fixed",
+        "length": 2,
+        "format": "ASCII",
+        "subfields":[]
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "name": "Transaction Amount",
+    "lengthIndicator" : "fixed",
+    "length": 12,
+    "format": "ASCII",
+    "subfields":[]
+  },
+  {
+    "index": 5,
+    "name": "Settlement Amount",
+    "lengthIndicator" : "fixed",
+    "length": 12,
+    "format": "ASCII",
+    "subfields":[]
+  },
+  {
+    "index": 7,
+    "name": "Transmission Date & Time",
+    "lengthIndicator" : "fixed",
+    "length": 10,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 9,
+    "name": "Settlement Conversion Rate",
+    "lengthIndicator" : "fixed",
+    "length": 8,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 11,
+    "name": "Systems Trace Audit Number (STAN)",
+    "lengthIndicator" : "fixed",
+    "length": 6,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 12,
+    "name": "Local Transaction Time",
+    "lengthIndicator" : "fixed",
+    "length": 6,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 13,
+    "name": "Local Transaction Date",
+    "lengthIndicator" : "fixed",
+    "length": 4,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 14,
+    "name": "Expiration Date",
+    "lengthIndicator" : "fixed",
+    "length": 4,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 15,
+    "name": "Settlement Date",
+    "lengthIndicator" : "fixed",
+    "length": 4,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 16,
+    "name": "Conversion Date",
+    "lengthIndicator" : "fixed",
+    "length": 4,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 18,
+    "name": "Merchant Type",
+    "lengthIndicator" : "fixed",
+    "length": 4,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 19,
+    "name": "Acquiring Institution Country Code",
+    "lengthIndicator" : "fixed",
+    "length": 3,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 22,
+    "name": "Point of Sale (POS) Entry Mode",
+    "lengthIndicator" : "fixed",
+    "length": 3,
+    "format": "ascii",
+    "subfields":[
+      {
+        "index": 1,
+        "name": "PAN entry mode",
+        "lengthIndicator" : "fixed",
+        "length": 2,
+        "format": "ascii",
+        "subfields":[]
+      },
+      {
+        "index": 2,
+        "name": "PIN entry capability",
+        "lengthIndicator" : "fixed",
+        "length": 1,
+        "format": "ascii",
+        "subfields":[]
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "name": "Card Sequence Number",
+    "lengthIndicator" : "fixed",
+    "length": 3,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 24,
+    "name": "Function Code",
+    "lengthIndicator" : "fixed",
+    "length": 3,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 25,
+    "name": "Message Reason Code",
+    "lengthIndicator" : "fixed",
+    "length": 2,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 26,
+    "name": "Point ef Sale (POS) Personal ID Number (PIN) Capture Code",
+    "lengthIndicator" : "fixed",
+    "length": 2,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 28,
+    "name": "Transaction Fee Amount",
+    "lengthIndicator" : "fixed",
+    "length": 9,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 29,
+    "name": "Settlement Fee Amount",
+    "lengthIndicator" : "fixed",
+    "length": 9,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 32,
+    "name": "Acquiring Institution Identification Code",
+    "lengthIndicator" : "LLVar",
+    "length": 11,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 33,
+    "name": "Forwarding Institution Identification Code",
+    "lengthIndicator" : "LLVar",
+    "length": 11,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 35,
+    "name": "Track 2 Data",
+    "lengthIndicator" : "LLVar",
+    "length": 37,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 36,
+    "name": "Track 3 Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 104,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 37,
+    "name": "Retrieval Reference Number",
+    "lengthIndicator" : "fixed",
+    "length": 12,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 38,
+    "name": "Approval Code",
+    "lengthIndicator" : "fixed",
+    "length": 6,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 39,
+    "name": "Response Code",
+    "lengthIndicator" : "fixed",
+    "length": 2,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 41,
+    "name": "Card Acceptor Terminal Identification",
+    "lengthIndicator" : "fixed",
+    "length": 8,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 42,
+    "name": "Card Acceptor Identification Code",
+    "lengthIndicator" : "fixed",
+    "length": 15,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 43,
+    "name": "Card Acceptor Name/Location",
+    "lengthIndicator" : "fixed",
+    "length": 40,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 44,
+    "name": "Additional Data",
+    "lengthIndicator" : "LLVar",
+    "length": 99,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 45,
+    "name": "Track 1 Data",
+    "lengthIndicator" : "LLVar",
+    "length": 76,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 48,
+    "name": "Network Information",
+    "lengthIndicator" : "LLLVar",
+    "length": 29,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 49,
+    "name": "Transaction Currency Code",
+    "lengthIndicator" : "fixed",
+    "length": 3,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 50,
+    "name": "Settlement Currency Code",
+    "lengthIndicator" : "fixed",
+    "length": 3,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 52,
+    "name": "Personal Identification Number (PIN) Data",
+    "lengthIndicator" : "fixed",
+    "length": 8,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 53,
+    "name": "Security Related Control Information",
+    "lengthIndicator" : "fixed",
+    "length": 16,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 54,
+    "name": "Additional Amounts",
+    "lengthIndicator" : "LLVar",
+    "length": 80,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 55,
+    "name": "Chip Card Related Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 255,
+    "format": "ber-tlv",
+    "subfields":[]
+  },
+  {
+    "index": 56,
+    "name": "Customer Related Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 999,
+    "format": "tlv",
+    "subfields":[]
+  },
+  {
+    "index": 59,
+    "name": "Transport Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 100,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 61,
+    "name": "Point of Sale (POS) Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 13,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 62,
+    "name": "Geographic Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 60,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 63,
+    "name": "Address Verification Service",
+    "lengthIndicator" : "LLLVar",
+    "length": 547,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 70,
+    "name": "Network Management Information Code",
+    "lengthIndicator" : "fixed",
+    "length": 3,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 90,
+    "name": "Original Data Elements",
+    "lengthIndicator" : "fixed",
+    "length": 42,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 95,
+    "name": "Replacement Amounts",
+    "lengthIndicator" : "fixed",
+    "length": 42,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 96,
+    "name": "Message Security Key",
+    "lengthIndicator" : "fixed",
+    "length": 8,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 100,
+    "name": "Receiving Institution Identification Code",
+    "lengthIndicator" : "LLVar",
+    "length": 11,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 104,
+    "name": "Transaction-specific Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 999,
+    "format": "tlv",
+    "subfields":[]
+  },
+  {
+    "index": 105,
+    "name": "Transaction-Specific Data 2",
+    "lengthIndicator" : "LLLVar",
+    "length": 999,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 106,
+    "name": "Transactional Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 999,
+    "format": "tlv",
+    "subfields":[]
+  },
+  {
+    "index": 113,
+    "name": "Generic Credit Application Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 124,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 114,
+    "name": "Consumer Credit Application Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 384,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 115,
+    "name": "Business Credit Application Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 497,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 116,
+    "name": "Consumer Account/User Inquiry Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 403,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 117,
+    "name": "Business Account/User Inquiry Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 331,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 118,
+    "name": "Authorized User Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 342,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 120,
+    "name": "Triple DES Key Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 999,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 121,
+    "name": "Secondary PIN Block",
+    "lengthIndicator" : "fixed",
+    "length": 8,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 122,
+    "name": "Additional Authentication Data",
+    "lengthIndicator" : "LLLVar",
+    "length": 100,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 123,
+    "name": "Promotional Field",
+    "lengthIndicator" : "LLLVar",
+    "length": 999,
+    "format": "tlv",
+    "subfields":[]
+  },
+  {
+    "index": 124,
+    "name": "Transaction Qualifier",
+    "lengthIndicator" : "LLLVar",
+    "length": 124,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 125,
+    "name": "Personal Use Field",
+    "lengthIndicator" : "LLLVar",
+    "length": 100,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 126,
+    "name": "Card Identifier (CID)",
+    "lengthIndicator" : "LLLVar",
+    "length": 5,
+    "format": "ascii",
+    "subfields":[]
+  },
+  {
+    "index": 127,
+    "name": "Version Indicator",
+    "lengthIndicator" : "LLLVar",
+    "length": 5,
+    "format": "ascii",
+    "subfields":[]
+  }
+]

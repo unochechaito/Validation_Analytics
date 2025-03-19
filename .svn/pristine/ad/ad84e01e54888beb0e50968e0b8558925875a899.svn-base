@@ -1,0 +1,64 @@
+[
+	{
+		"name": "MTI",
+		"index": "MTI",
+		"values": {
+			"0100": "Autorizacion",
+			"0120": "Advice",
+			"0200": "Financiero",
+			"0400": "Reverso",
+			"0420": "Reverso advice",
+			"0600": "Administrativo",
+			"0620": "Administrativo advice",
+			"0800": "Network Management"
+		}
+	},
+	{
+		"name": "Processing Code",
+		"index": "3.1",
+		"values": {
+			"00": "Compra",
+			"01": "Retiro",
+			"09": "Compra con cash",
+			"10": "Account Funding",
+			"13": "Verificacion de direccion",
+			"14": "Pago recurrente",
+			"15": "Pago incremental",
+			"16": "Suscripcion",
+			"18": "Account Verification",
+			"20": "Merchandise Return",
+			"28": "Load Transaction",
+			"29": "Account Credit Transaction",
+			"30": "Available Funds Inquiry",
+			"31": "Consulta de saldo",
+			"33": "De-Tokenization",
+			"34": "Account Inquiry Message",
+			"53": "Network Payment",
+			"98": "PIN Change",
+			"99": "PIN Unblock"
+		}
+	},
+	{
+		"name": "POS Entry Mode",
+		"index": "22.1",
+		"values": {
+			"00": "Desconocido",
+			"01": "Manual",
+			"02": "Banda magnetica",
+			"03": "QR",
+			"04": "OCR",
+			"05": "Chip contacto",
+			"07": "e-commerce",
+			"10": "Stored Card Account",
+			"81": "Contactless banda",
+			"82": "mcommerce",
+			"83": "Contactless",
+			"85": "Fallback",
+			"86": "Contactless Interface Change",
+			"90": "Autorizacion VOZ",
+			"91": "VRU",
+			"92": "Batch Authorizations",
+			"93": "Batch Authorizations Cash Access"
+		}
+	}
+]

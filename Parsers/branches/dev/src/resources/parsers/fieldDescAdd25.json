@@ -1,0 +1,95 @@
+[
+  {
+    "index": "0",
+    "name": "Header",
+    "lengthIndicator": "fixed",
+    "length": "24",
+    "format": "ASCII",
+    "subfields": [
+      {
+        "name": "FECHA-DE-CONCILIACION",
+        "lengthIndicator": "fixed",
+        "length": "6",
+        "format": "ASCII"
+      },
+      {
+        "name": "TIPO-DESC",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "SITE-ORIGEN",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "PERIODO",
+        "lengthIndicator": "fixed",
+        "length": "2",
+        "format": "ASCII"
+      },
+      {
+        "name": "SEQ",
+        "lengthIndicator": "fixed",
+        "length": "7",
+        "format": "ASCII"
+      },
+      {
+        "name": "ID-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "3",
+        "format": "ASCII"
+      },
+      {
+        "name": "LONGITUD-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "4",
+        "format": "ASCII"
+      }
+    ]
+  },
+  {
+    "index": "1",
+    "name": "FLAG-INTERACCION-HSM",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "2",
+    "name": "FLAG-MATCH-DATOS-CIFRADO",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "3",
+    "name": "FLAG-FUNCIONALIDAD-CIFRADO",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "4",
+    "name": "FLAG-DATOS-CRIPTO",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "5",
+    "name": "CRIPTOGRAMA-DE-CIFRADO",
+    "lengthIndicator": "fixed",
+    "length": "224",
+    "format": "ASCII"
+  },
+  {
+    "index": "6",
+    "name": "Filler",
+    "lengthIndicator": "fixed",
+    "length": "10",
+    "format": "ASCII"
+  }
+]

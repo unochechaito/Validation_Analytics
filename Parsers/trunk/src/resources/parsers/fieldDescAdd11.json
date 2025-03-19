@@ -1,0 +1,137 @@
+[
+  {
+    "index": "0",
+    "name": "Header",
+    "lengthIndicator": "fixed",
+    "length": "24",
+    "format": "ASCII",
+    "subfields": [
+      {
+        "name": "FECHA-DE-CONCILIACION",
+        "lengthIndicator": "fixed",
+        "length": "6",
+        "format": "ASCII"
+      },
+      {
+        "name": "TIPO-DESC",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "SITE-ORIGEN",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "PERIODO",
+        "lengthIndicator": "fixed",
+        "length": "2",
+        "format": "ASCII"
+      },
+      {
+        "name": "SEQ",
+        "lengthIndicator": "fixed",
+        "length": "7",
+        "format": "ASCII"
+      },
+      {
+        "name": "ID-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "3",
+        "format": "ASCII"
+      },
+      {
+        "name": "LONGITUD-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "4",
+        "format": "ASCII"
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "name": "Monto Inicial Lealtad",
+    "lengthIndicator": "fixed",
+    "length": 14,
+    "format": "ASCII"
+  },
+  {
+    "index": 2,
+    "name": "Monto Final Lealtad ",
+    "lengthIndicator": "fixed",
+    "length": 14,
+    "format": "ASCII"
+  },
+  {
+    "index": 3,
+    "name": "Porcentaje de Descuento",
+    "lengthIndicator": "fixed",
+    "length": 5,
+    "format": "ASCII"
+  },
+  {
+    "index": 4,
+    "name": "Monto del Descuento",
+    "lengthIndicator": "fixed",
+    "length": 14,
+    "format": "ASCII"
+  },
+  {
+    "index": 5,
+    "name": "Tipo de Promoción",
+    "lengthIndicator": "fixed",
+    "length": 1,
+    "format": "ASCII"
+  },
+  {
+    "index": 6,
+    "name": "Porcentaje de Distribución de la Promoción al Negocio",
+    "lengthIndicator": "fixed",
+    "length": 5,
+    "format": "ASCII"
+  },
+  {
+    "index": 7,
+    "name": "Porcentaje de Distribución de la Promoción a Banamex",
+    "lengthIndicator": "fixed",
+    "length": 5,
+    "format": "ASCII"
+  },
+  {
+    "index": 8,
+    "name": "Importe de la Promoción al Negocio",
+    "lengthIndicator": "fixed",
+    "length": 14,
+    "format": "ASCII"
+  },
+  {
+    "index": 9,
+    "name": "Importe de la Promoción a Banamex",
+    "lengthIndicator": "fixed",
+    "length": 14,
+    "format": "ASCII"
+  },
+  {
+    "index": 10,
+    "name": "Id único de Transacción de Welcome",
+    "lengthIndicator": "fixed",
+    "length": 15,
+    "format": "ASCII"
+  },
+  {
+    "index": 11,
+    "name": "Recurrencia",
+    "lengthIndicator": "fixed",
+    "length": 14,
+    "format": "ASCII"
+  },
+  {
+    "index": 12,
+    "name": "Filler",
+    "lengthIndicator": "fixed",
+    "length": 15,
+    "format": "ASCII"
+  }
+]

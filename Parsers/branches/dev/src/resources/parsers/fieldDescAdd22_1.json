@@ -1,0 +1,275 @@
+[
+  {
+    "index": "0",
+    "name": "FECHA-DE-CONCILIACION",
+    "lengthIndicator": "fixed",
+    "length": "6",
+    "format": "ASCII"
+  },
+  {
+    "index": "1",
+    "name": "TIPO-DESC",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "2",
+    "name": "SITE-ORIGEN",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "3",
+    "name": "PERIODO",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "4",
+    "name": "SEQ",
+    "lengthIndicator": "fixed",
+    "length": "7",
+    "format": "ASCII"
+  },
+  {
+    "index": "5",
+    "name": "ID-REGISTRO",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "6",
+    "name": "LONGITUD-REGISTRO",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "7",
+    "name": "Presencia del Token",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "8",
+    "name": "Longitud del Token",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "9",
+    "name": "Network Identification Code DE-63_1",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "10",
+    "name": "Message Reason Code DE-63_3",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "11",
+    "name": "File Name DE-101",
+    "lengthIndicator": "fixed",
+    "length": "17",
+    "format": "ASCII"
+  },
+  {
+    "index": "12",
+    "name": "Elapsed Time To Live DE-123_1F31",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "13",
+    "name": "Count of Number of Transactions DE-123_1F32",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "14",
+    "name": "Cumulative Transaction Amount DE-123_1F33",
+    "lengthIndicator": "fixed",
+    "length": "7",
+    "format": "ASCII"
+  },
+  {
+    "index": "15",
+    "name": "Token DE-123_01",
+    "lengthIndicator": "fixed",
+    "length": "19",
+    "format": "ASCII"
+  },
+  {
+    "index": "16",
+    "name": "Token Assurance Level DE-123_02",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "17",
+    "name": "Token Requestor ID DE-123_03",
+    "lengthIndicator": "fixed",
+    "length": "11",
+    "format": "ASCII"
+  },
+  {
+    "index": "18",
+    "name": "Primary Account Number, Account Range DE-123_04",
+    "lengthIndicator": "fixed",
+    "length": "19",
+    "format": "ASCII"
+  },
+  {
+    "index": "19",
+    "name": "Token Reference ID DE-123_05",
+    "lengthIndicator": "fixed",
+    "length": "32",
+    "format": "ASCII"
+  },
+  {
+    "index": "20",
+    "name": "Token Expiration Date DE-123_06",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "21",
+    "name": "Token Type DE-123_07",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "22",
+    "name": "Token Status DE-123_08",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "23",
+    "name": "Last Updated By DE-123_0A",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "24",
+    "name": "PAN Reference ID DE-123_0B",
+    "lengthIndicator": "fixed",
+    "length": "32",
+    "format": "ASCII"
+  },
+  {
+    "index": "25",
+    "name": "Activation Code DE-123_1A",
+    "lengthIndicator": "fixed",
+    "length": "8",
+    "format": "ASCII"
+  },
+  {
+    "index": "26",
+    "name": "Activation Code Expiry Date/Time Tab 1B",
+    "lengthIndicator": "fixed",
+    "length": "12",
+    "format": "ASCII"
+  },
+  {
+    "index": "27",
+    "name": "Activation Code Verification Attempts DE-123_1C",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "28",
+    "name": "Number of Activation Codes Issued DE-123_1D",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "29",
+    "name": "Visa Token Score DE-123_10",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "30",
+    "name": "Visa Token Decisioning DE-123_11",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "31",
+    "name": "Number of Active Tokens DE-123_12",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "32",
+    "name": "Number of Inactive Tokens DE-123_13",
+    "lengthIndicator": "LLvar",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "33",
+    "name": "Number of Suspended Tokens DE-123_14",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "34",
+    "name": "Replacement PAN DE-127_1",
+    "lengthIndicator": "fixed",
+    "length": "19",
+    "format": "ASCII"
+  },
+  {
+    "index": "35",
+    "name": "Replacement PAN Expiration Date DE-127_2",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "36",
+    "name": "Transaction Indicator DE-60_6",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "37",
+    "name": "Merchant Verification Value [MVV] DE-62_20",
+    "lengthIndicator": "fixed",
+    "length": "10",
+    "format": "ASCII"
+  },
+  {
+    "index": "38",
+    "name": "Filler",
+    "lengthIndicator": "fixed",
+    "length": "8",
+    "format": "ASCII"
+  }
+]

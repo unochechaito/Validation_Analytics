@@ -1,0 +1,215 @@
+{
+  "photos": [
+    {
+      "id": "001",
+      "name": "Porcentaje de ON2 DESC",
+      "query": "with totales(conteo) as (select count(id)conteo from desc_linea) select json_extract(data, '$.fields.DESC_ATM-RESULT-CODE') on2,  count(json_extract(data, '$.fields.DESC_ATM-RESULT-CODE')) cantidad_ocurrencias, (select conteo from totales) total, round(count(json_extract(data, '$.fields.DESC_ATM-RESULT-CODE'))*100.00/(select count(id) from desc_linea),2) porcentaje  from desc_linea group by on2;",
+      "output_file": "Porcentaje de ON2 DESC.txt",
+      "isComparable": true
+    },
+    {
+      "id": "002",
+      "name": "Porcentaje de ON2 por BIN",
+      "query": "with bines(bin, conteo) as (select bin, count(bin) conteo from desc_linea group by bin)  select bin,  json_extract(data, '$.fields.DESC_ATM-RESULT-CODE') on2,  count(desc_linea.bin) cantidad_ocurrencias,  (select conteo from bines where bines.bin=desc_linea.bin) as total_txn_bin, round(count(desc_linea.bin)*100.0/(select bines.conteo from bines where bines.bin=desc_linea.bin),2)porcentaje_on2_bin from desc_linea group by bin, on2 order by bin, on2;",
+      "output_file": "Porcentaje de ON2 por BIN.txt",
+      "isComparable": true
+    },
+    {
+      "id": "003",
+      "name": "Porcentaje de ON2 por Dispatcher Adquirente",
+      "query": "with dispatchers(acq_dispatcher, conteo) as (select acq_dispatcher, count(acq_dispatcher) conteo from desc_linea group by acq_dispatcher)  select acq_dispatcher as dispatcher_adq,  json_extract(data, '$.fields.DESC_ATM-RESULT-CODE') on2,  count(desc_linea.acq_dispatcher) cantidad_ocurrencias,  (select conteo from dispatchers where dispatchers.acq_dispatcher=desc_linea.acq_dispatcher) as total_txn_dispatcher_adq, round(count(desc_linea.acq_dispatcher)*100.0/(select dispatchers.conteo from dispatchers where dispatchers.acq_dispatcher=desc_linea.acq_dispatcher),2)porcentaje_on2_dispatcher from desc_linea group by dispatcher_adq, on2 order by dispatcher_adq, on2;",
+      "output_file": "Porcentaje de ON2 por Dispatcher Adquirente.txt",
+      "isComparable": true
+    },
+    {
+      "id": "004",
+      "name": "Mapeo MTI-ProcCode a TranCode",
+      "query": "SELECT json_extract(data, '$.fields.SEG-TRAN-TYPE') mti, substr(json_extract(data, '$.fields.SEG-PROCESSING-CODE'),1,2) proc_code, json_extract(data, '$.fields.DESC_ATM-TRAN-CODE') tran_code FROM desc_linea GROUP BY mti, proc_code, tran_code;",
+      "output_file": "Mapeo MTI-ProcCode a TranCode.txt",
+      "isComparable": true
+    },
+    {
+      "id": "005",
+      "name": "Mapeo de codigos de error C39 emisor, on2 y C39 adquierente",
+      "query": "SELECT json_extract(iv.res_msg, '$.fields.39') error_emi ,  json_extract(dc.data, '$.fields.DESC_ATM-RESULT-CODE') on2,  json_extract(av.res_msg, '$.fields.39') error_adq  FROM acq_view av INNER JOIN desc_linea dc ON av.key = dc.key_acq INNER JOIN iss_view iv ON iv.key = dc.key_iss GROUP BY error_adq, on2, error_emi;",
+      "output_file": "Mapeo de codigos de error C39 emisor, on2 y C39 adquierente.txt",
+      "isComparable": true
+    },
+    {
+      "id": "006",
+      "name": "Tipo de transacciones declinadas por el emisor y aprobadas al adquirente",
+      "query": "SELECT iv.dispatcher dispatcher_emi, json_extract(iv.res_msg, '$.fields.39') error_emi,  json_extract(dc.data, '$.fields.DESC_ATM-RESULT-CODE') on2,  json_extract(av.res_msg, '$.fields.39') error_adq,  av.dispatcher dispatcher_adq, av.category categoria FROM acq_view av INNER JOIN desc_linea dc ON av.key = dc.key_acq INNER JOIN iss_view iv ON iv.key = dc.key_iss where error_emi!='00' and error_adq='00' GROUP BY error_adq, on2, error_emi;",
+      "output_file": "Tipo de transacciones declinadas por el emisor y aprobadas al adquirente.txt",
+      "isComparable": true
+    },
+    {
+      "id": "007",
+      "name": "Codigos de C39 por Dispatcher emisor",
+      "query": "with dispatchers(dispatcher, conteo) as(select dispatcher, count(dispatcher) conteo from iss_view group by dispatcher) select dispatcher as dispatcher_emi,  json_extract(iv.res_msg, '$.fields.39') C39_emi,  count(json_extract(iv.res_msg, '$.fields.39')) cantidad_ocurrencias,  (select dispatchers.conteo from dispatchers where dispatchers.dispatcher=iv.dispatcher) total_txn_dispatcher, round(count(iv.dispatcher)*100.0/(select dispatchers.conteo from dispatchers where dispatchers.dispatcher=iv.dispatcher), 2) porcentaje_C39_dispatcher from iss_view iv group by C39_emi, dispatcher_emi order by dispatcher_emi, c39_emi;",
+      "output_file": "Codigos de C39 por Dispatcher emisor.txt",
+      "isComparable": true
+    },
+    {
+      "id": "008",
+      "name": "Indicadores en el desc de Tipo de Cambio por flujo adquirente internacional a emisor",
+      "query": "select acq_dispatcher dispatcher_adq, iss_dispatcher dispatcher_emi,  json_extract(desc_linea.data, '$.fields.INDI-OPERATIVA-INTERNA') ind_tipo_cambio, json_extract(desc_linea.data, '$.fields.SEG-TRAN-TYPE') mti, json_extract(desc_linea.data, '$.fields.SEG-PROCESSING-CODE') proc_code, json_extract(desc_linea.data, '$.fields.ADD-DATA-TXN-CCY-CODE (DE049)') de49_adq, json_extract(desc_linea.data, '$.fields.MONEDA-FACTURACION (DE051)') de51_adq, json_extract(desc_linea.data, '$.fields.TIPO-CAMBIO-OTRAS-MONEDAS') tipo_cambio_otras_monedas, json_extract(desc_linea.data, '$.fields.TIPO-CAMBIO-BANXICO') tipo_cambio_banxico,  json_extract(desc_linea.data, '$.fields.FACTOR-CONVERSION') factor_conversion,  json_extract(desc_linea.data, '$.fields.MARK-UP') markup from desc_linea where json_extract(desc_linea.data, '$.fields.DESC_ATM-RESULT-CODE')='0000' and dispatcher_adq in ('11021,11014','11502','10997') group by dispatcher_adq, dispatcher_emi, ind_tipo_cambio, mti, proc_code, de49_adq, de51_adq, tipo_cambio_otras_monedas, tipo_cambio_banxico, factor_conversion, markup  order by dispatcher_adq, dispatcher_emi;",
+      "output_file": "Indicadores en el desc de Tipo de Cambio por flujo adquirente internacional a emisor.txt",
+      "isComparable": true
+    },
+    {
+      "id": "009",
+      "name": "C44 respondido por el emisor Visa por operativa",
+      "query": "select dispatcher, category categoria, COALESCE (json_extract(iv.req_msg, '$.fields.44'), 'Sin Respuesta C44') c44 from iss_view iv where json_extract(iv.req_msg, '$.type')='Visa' group by c44, category, dispatcher;",
+      "output_file": "C44 respondido por el emisor Visa por operativa.txt",
+      "isComparable": true
+    },
+    {
+      "id": "010",
+      "name": "C44 respondido al adquirente Visa por operativa",
+      "query": "select dispatcher, category categoria, json_extract(av.req_msg, '$.fields.44') c44 from acq_view av where json_extract(av.res_msg, '$.type')='Visa' group by c44, category, dispatcher;",
+      "output_file": "C44 respondido al adquirente Visa por operativa.txt",
+      "isComparable": true
+    },
+    {
+      "id": "011",
+      "name": "Campos presentes por tipo de transaccion recibidos de adquirente Visa",
+      "query": "select category categoria, substring(fingerprint, length(category)+1) campos_presentes from acq_view av where  json_extract(av.req_msg, '$.type')='Visa' group by fingerprint;",
+      "output_file": "Campos presentes por tipo de transaccion recibidos de adquirente Visa.txt",
+      "isComparable": true
+    },
+    {
+      "id": "012",
+      "name": "Campos presentes por tipo de transaccion recibidos de adquirente MasterCard",
+      "query": "select category categoria, substring(fingerprint, length(category)+1) campos_presentes from acq_view av where  json_extract(av.req_msg, '$.type')='Mastercard' group by fingerprint;",
+      "output_file": "Campos presentes por tipo de transaccion recibidos de adquirente MasterCard.txt",
+      "isComparable": true
+    },
+    {
+      "id": "013",
+      "name": "Campos presentes por tipo de transaccion enviados al emisor Visa",
+      "query": "select category categoria, substring(fingerprint, length(category)+1) campos_presentes from iss_view iv where  json_extract(iv.req_msg, '$.type')='Visa' group by fingerprint;",
+      "output_file": "Campos presentes por tipo de transaccion enviados al emisor Visa.txt",
+      "isComparable": true
+    },
+    {
+      "id": "014",
+      "name": "Campos presentes por tipo de transaccion enviados al emisor MasterCard",
+      "query": "select category categoria, substring(fingerprint, length(category)+1) campos_presentes from iss_view iv where  json_extract(iv.req_msg, '$.type')='Mastercard' group by fingerprint;",
+      "output_file": "Campos presentes por tipo de transaccion enviados al emisor MasterCard.txt",
+      "isComparable": true
+    },
+    {
+      "id": "015",
+      "name": "Campos presentes respondidos por tipo de transaccion al adquirente Visa",
+      "query": "with campos(categoria, campo_presente) as (select category categoria, (select distinct t.key) campo_presente from acq_view av, json_tree(av.res_msg, '$.fields') t where  json_extract(av.res_msg, '$.type')='Visa' and t.key GLOB '*[0-9]*' and t.key not GLOB '*[A-Z]*' and t.key != '1' group by category, campo_presente order by cast(campo_presente as unsigned) asc) SELECT categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') campos_presentes FROM campos GROUP BY categoria ORDER BY campos_presentes ASC;",
+      "output_file": "Campos presentes respondidos por tipo de transaccion al adquirente Visa.txt",
+      "isComparable": true
+    },
+    {
+      "id": "016",
+      "name": "Campos presentes respondidos por tipo de transaccion al adquirente Mastercard",
+      "query": "with campos(categoria, campo_presente) as (select category categoria, (select distinct t.key) campo_presente from acq_view av, json_tree(av.res_msg, '$.fields') t where  json_extract(av.res_msg, '$.type')='Mastercard' and t.key GLOB '*[0-9]*' and t.key not GLOB '*[A-Z]*' and t.key != '1' group by category, campo_presente order by cast(campo_presente as unsigned) asc) SELECT categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') campos_presentes FROM campos GROUP BY categoria ORDER BY campos_presentes ASC;",
+      "output_file": "Campos presentes respondidos por tipo de transaccion al adquirente Mastercard.txt",
+      "isComparable": true
+    },
+    {
+      "id": "017",
+      "name": "Campos presentes por tipo de transaccion respondidos por el emisor Visa",
+      "query": "with campos(categoria, campo_presente) as (select category categoria, (select distinct t.key) campo_presente from iss_view iv, json_tree(iv.res_msg, '$.fields') t where json_extract(iv.res_msg, '$.type')='Visa' and t.key GLOB '*[0-9]*' and t.key not GLOB '*[A-Z]*' and t.key != '1' group by category, campo_presente order by cast(campo_presente as unsigned) asc) SELECT categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') campos_presentes FROM campos GROUP BY categoria  ORDER BY categoria ASC;",
+      "output_file": "Campos presentes por tipo de transaccion respondidos por el emisor Visa.txt",
+      "isComparable": true
+    },
+    {
+      "id": "018",
+      "name": "Campos presentes por tipo de transaccion respondidos por el emisor MasterCard",
+      "query": "with campos(categoria, campo_presente) as (select category categoria, (select distinct t.key) campo_presente from iss_view iv, json_tree(iv.res_msg, '$.fields') t where json_extract(iv.res_msg, '$.type')='Mastercard' and t.key GLOB '*[0-9]*' and t.key not GLOB '*[A-Z]*' and t.key != '1' group by category, campo_presente order by cast(campo_presente as unsigned) asc) SELECT categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') campos_presentes FROM campos GROUP BY categoria  ORDER BY categoria ASC;",
+      "output_file": "Campos presentes por tipo de transaccion respondidos por el emisor MasterCard.txt",
+      "isComparable": true
+    },
+    {
+      "id": "019",
+      "name": "Tags emv por tipo de transaccion recibidos de adquirente Visa",
+      "query": "with tags(categoria, tag_emv) as (select category categoria,  t.key tag_emv from acq_view av, json_tree(av.req_msg, '$.fields.55.subfields') t where json_extract(av.req_msg, '$.type')='Visa' and t.key not in ('subfields', 'Dataset ID', 'Dataset Length') group by category, tag_emv order by tag_emv asc) SELECT categoria,        replace(GROUP_CONCAT(DISTINCT tag_emv), ',', '/') tags_emv FROM tags GROUP BY categoria  ORDER BY categoria ASC;",
+      "output_file": "Tags emv por tipo de transaccion recibidos de adquirente Visa.txt",
+      "isComparable": true
+    },
+    {
+      "id": "020",
+      "name": "Tags emv por tipo de transaccion recibidos de adquirente MasterCard",
+      "query": "with tags(categoria, tag_emv) as (select category categoria,  t.key tag_emv from acq_view av, json_tree(av.req_msg, '$.fields.55.subfields') t where json_extract(av.req_msg, '$.type')='Mastercard' and t.key not in ('subfields', 'Dataset ID', 'Dataset Length') group by category, tag_emv order by tag_emv asc) SELECT categoria,        replace(GROUP_CONCAT(DISTINCT tag_emv), ',', '/') tags_emv FROM tags GROUP BY categoria  ORDER BY categoria ASC;",
+      "output_file": "Tags emv por tipo de transaccion recibidos de adquirente MasterCard.txt",
+      "isComparable": true
+    },
+    {
+      "id": "021",
+      "name": "Tags emv por tipo de transaccion enviados al emisor Visa",
+      "query": "with tags(categoria, tag_emv) as (select category categoria,  t.key tag_emv from iss_view iv, json_tree(iv.req_msg, '$.fields.55.subfields') t where json_extract(iv.req_msg, '$.type')='Visa' and t.key not in ('subfields', 'Dataset ID', 'Dataset Length') group by category, tag_emv order by tag_emv asc) SELECT categoria,        replace(GROUP_CONCAT(DISTINCT tag_emv), ',', '/') tags_emv FROM tags GROUP BY categoria  ORDER BY categoria ASC;",
+      "output_file": "Tags emv por tipo de transaccion enviados al emisor Visa.txt",
+      "isComparable": true
+    },
+    {
+      "id": "022",
+      "name": "Tags emv por tipo de transaccion enviados al emisor MasterCard",
+      "query": "with tags(categoria, tag_emv) as (select category categoria,  t.key tag_emv from iss_view iv, json_tree(iv.req_msg, '$.fields.55.subfields') t where json_extract(iv.req_msg, '$.type')='Mastercard' and t.key not in ('subfields', 'Dataset ID', 'Dataset Length') group by category, tag_emv order by tag_emv asc) SELECT categoria,        replace(GROUP_CONCAT(DISTINCT tag_emv), ',', '/') tags_emv FROM tags GROUP BY categoria  ORDER BY categoria ASC;",
+      "output_file": "Tags emv por tipo de transaccion enviados al emisor MasterCard.txt",
+      "isComparable": true
+    },
+    {
+      "id": "023",
+      "name": "Campos presentes por tipo de transaccion recibidos de adquirentes Nacional",
+      "query": "with campos(dispatcher, categoria, campo_presente) as (select dispatcher, category categoria, (select distinct t.key) campo_presente from acq_view av, json_tree(av.req_msg, '$.fields') t where json_extract(av.req_msg, '$.type')='ISO_ATM' and t.key GLOB '*[0-9]*' and t.key not GLOB '*[A-Z]*' and t.key != '1' group by dispatcher, category, campo_presente order by cast(campo_presente as unsigned) asc) SELECT dispatcher, categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') campos_presentes FROM campos GROUP BY dispatcher, categoria  ORDER BY dispatcher, categoria ASC;",
+      "output_file": "Campos presentes por tipo de transaccion recibidos de adquirentes Nacional.txt",
+      "isComparable": true
+    },
+    {
+      "id": "024",
+      "name": "Campos presentes por tipo de transaccion enviados a emisores Nacional",
+      "query": "with campos(dispatcher, categoria, campo_presente) as (select dispatcher, category categoria, (select distinct t.key) campo_presente from iss_view iv, json_tree(iv.req_msg, '$.fields') t where json_extract(iv.req_msg, '$.type')='ISO_ATM' and t.key GLOB '*[0-9]*' and t.key not GLOB '*[A-Z]*' and t.key != '1' group by dispatcher, category, campo_presente order by cast(campo_presente as unsigned) asc) SELECT dispatcher, categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') campos_presentes FROM campos GROUP BY dispatcher, categoria  ORDER BY dispatcher, categoria ASC;",
+      "output_file": "Campos presentes por tipo de transaccion enviados a emisores Nacional.txt",
+      "isComparable": true
+    },
+    {
+      "id": "025",
+      "name": "Campos presentes por tipo de transaccion respondidos por emisores Nacional",
+      "query": "with campos(dispatcher, categoria, campo_presente) as (select dispatcher, category categoria, (select distinct t.key) campo_presente from iss_view iv, json_tree(iv.res_msg, '$.fields') t where json_extract(iv.res_msg, '$.type')='ISO_ATM' and t.key GLOB '*[0-9]*' and t.key not GLOB '*[A-Z]*' and t.key != '1' group by dispatcher, category, campo_presente order by cast(campo_presente as unsigned) asc) SELECT dispatcher, categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') campos_presentes FROM campos GROUP BY dispatcher, categoria  ORDER BY dispatcher, categoria ASC;",
+      "output_file": "Campos presentes por tipo de transaccion respondidos por emisores Nacional.txt",
+      "isComparable": true
+    },
+    {
+      "id": "026",
+      "name": "Campos presentes por tipo de transaccion respondidos a adquirentes Nacional",
+      "query": "with campos(dispatcher, categoria, campo_presente) as (select dispatcher, category categoria, (select distinct t.key) campo_presente from acq_view av, json_tree(av.res_msg, '$.fields') t where json_extract(av.res_msg, '$.type')='ISO_ATM' and t.key GLOB '*[0-9]*' and t.key not GLOB '*[A-Z]*' and t.key != '1' group by dispatcher, category, campo_presente order by cast(campo_presente as unsigned) asc) SELECT dispatcher, categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') campos_presentes FROM campos GROUP BY dispatcher, categoria  ORDER BY dispatcher, categoria ASC;",
+      "output_file": "Campos presentes por tipo de transaccion respondidos a adquirentes Nacional.txt",
+      "isComparable": true
+    },
+    {
+      "id": "027",
+      "name": "Tokens presentes por tipo de transaccion recibidos de adquirentes Nacional",
+      "query": "with campos(dispatcher, categoria, campo_presente) as (select dispatcher, category categoria, (select distinct t.key) campo_presente from acq_view av, json_tree(av.req_msg, '$.fields.126.subfields') t where json_extract(av.req_msg, '$.type')='ISO_ATM' and t.key not in ('header', 'subfields') group by dispatcher, category, campo_presente order by campo_presente asc) SELECT dispatcher, categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') tokens_presentes FROM campos GROUP BY dispatcher, categoria  ORDER BY dispatcher, categoria ASC;",
+      "output_file": "Tokens presentes por tipo de transaccion recibidos de adquirentes Nacional.txt",
+      "isComparable": true
+    },
+    {
+      "id": "028",
+      "name": "Tokens presentes por tipo de transaccion enviados a emisores Nacional",
+      "query": "with campos(dispatcher, categoria, campo_presente) as (select dispatcher, category categoria, (select distinct t.key) campo_presente from iss_view iv, json_tree(iv.req_msg, '$.fields.126.subfields') t where json_extract(iv.req_msg, '$.type')='ISO_ATM' and t.key not in ('header', 'subfields') group by dispatcher, category, campo_presente order by campo_presente asc) SELECT dispatcher, categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') tokens_presentes FROM campos GROUP BY dispatcher, categoria  ORDER BY dispatcher, categoria ASC;",
+      "output_file": "Tokens presentes por tipo de transaccion enviados a emisores Nacional.txt",
+      "isComparable": true
+    },
+    {
+      "id": "029",
+      "name": "Tokens presentes por tipo de transaccion respondidos a adquirentes Nacional",
+      "query": "with campos(dispatcher, categoria, campo_presente) as (select dispatcher, category categoria, (select distinct t.key) campo_presente from acq_view av, json_tree(av.res_msg, '$.fields.126.subfields') t where json_extract(av.res_msg, '$.type')='ISO_ATM' and t.key not in ('header', 'subfields') group by dispatcher, category, campo_presente order by campo_presente asc) SELECT dispatcher, categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') tokens_presentes FROM campos GROUP BY dispatcher, categoria  ORDER BY dispatcher, categoria ASC;",
+      "output_file": "Tokens presentes por tipo de transaccion respondidos a adquirentes Nacional.txt",
+      "isComparable": true
+    },
+    {
+      "id": "030",
+      "name": "Tokens presentes por tipo de transaccion respondidos de emisores Nacional",
+      "query": "with campos(dispatcher, categoria, campo_presente) as (select dispatcher, category categoria, (select distinct t.key) campo_presente from iss_view iv, json_tree(iv.res_msg, '$.fields.126.subfields') t where json_extract(iv.res_msg, '$.type')='ISO_ATM' and t.key not in ('header', 'subfields') group by dispatcher, category, campo_presente order by campo_presente asc) SELECT dispatcher, categoria,        replace(GROUP_CONCAT(DISTINCT campo_presente), ',', '/') tokens_presentes FROM campos GROUP BY dispatcher, categoria  ORDER BY dispatcher, categoria ASC;",
+      "output_file": "Tokens presentes por tipo de transaccion respondidos de emisores Nacional.txt",
+      "isComparable": true
+    }
+  ]
+}
+

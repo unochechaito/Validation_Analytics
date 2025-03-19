@@ -1,0 +1,667 @@
+[
+	{
+		"index": "0",
+		"name": "DESC-POS-TIPO-DESC",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "1",
+		"name": "DESC-POS-SITE",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "2",
+		"name": "DESC-POS-PERIODO-DESC",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "3",
+		"name": "DESC-POS-SEQ-DESC",
+		"lengthIndicator" : "fixed",
+		"length": "7",
+		"format": "ASCII"
+	},
+	{
+		"index": "4",
+		"name": "DESC-POS-TERML-NBR",
+		"lengthIndicator" : "fixed",
+		"length": "5",
+		"format": "ASCII"
+	},
+	{
+		"index": "5",
+		"name": "DESC-POS-OPERATING-FI-NBR",
+		"lengthIndicator" : "fixed",
+		"length": "5",
+		"format": "ASCII"
+	},
+	{
+		"index": "6",
+		"name": "DESC-POS-TRAN-CODE",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "7",
+		"name": "DESC-POS-RESULT-CODE",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "8",
+		"name": "DESC-POS-TRAN-DATE",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "ASCII"
+	},
+	{
+		"index": "9",
+		"name": "DESC-POS-TRAN-TIME",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "10",
+		"name": "DESC-POS-FORCE-POST-IND",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "11",
+		"name": "DESC-POS-REVERSAL-IND",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "12",
+		"name": "DESC-POS-CARD-FI-NBR",
+		"lengthIndicator" : "fixed",
+		"length": "5",
+		"format": "ASCII"
+	},
+	{
+		"index": "13",
+		"name": "DESC-POS-AUTH-METHOD",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "14",
+		"name": "DESC-POS-AMT-DEBIT",
+		"lengthIndicator" : "fixed",
+		"length": "13",
+		"format": "ASCII"
+	},
+	{
+		"index": "15",
+		"name": "DESC-POS-SWITCH-SEQ-NBR",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "16",
+		"name": "POS-SEG-TRAN-TYPE",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "17",
+		"name": "POS-SEG-RRN",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "18",
+		"name": "POS-SEG-TRAN-DATE",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "19",
+		"name": "POS-SEG-TRAN-TIME",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "20",
+		"name": "POS-SEG-PROCESSING-CODE",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "21",
+		"name": "POS-SEG-MERCHANT-TYPE",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "22",
+		"name": "POS-SEG-POS-ENTRY-MODE",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "23",
+		"name": "POS-SEG-RESPONSE-CODE",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "24",
+		"name": "POS-SEG-AUTH-CODE",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "25",
+		"name": "POS-SEG-STAN",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "26",
+		"name": "POS-SEG-SETTLEMENT-DATE",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "27",
+		"name": "POS-SEG-CARD-ACCEPTR-ID",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	},
+	{
+		"index": "28",
+		"name": "POS-SEG-CCY-CODE",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "29",
+		"name": "POS-SEG-OUT-SWAP",
+		"lengthIndicator" : "fixed",
+		"length": "5",
+		"format": "ASCII"
+	},
+	{
+		"index": "30",
+		"name": "POS-SEG-TRACK2",
+		"lengthIndicator" : "fixed",
+		"length": "19",
+		"format": "ASCII"
+	},
+	{
+		"index": "31",
+		"name": "POS-SEG-ACQ-INST-ID",
+		"lengthIndicator" : "fixed",
+		"length": "11",
+		"format": "ASCII"
+	},
+	{
+		"index": "32",
+		"name": "POS-SEG-ADDL-POS-DATA",
+		"lengthIndicator" : "fixed",
+		"length": "7",
+		"format": "ASCII"
+	},
+	{
+		"index": "33",
+		"name": "POS-SEG-FROM-ACCT",
+		"lengthIndicator" : "fixed",
+		"length": "13",
+		"format": "ASCII"
+	},
+	{
+		"index": "34",
+		"name": "POS-SEG-ADVISE-LINEA-BMER",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "35",
+		"name": "DESC_REC_C60-BANK",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "36",
+		"name": "DESC_REC_C60-NET",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "37",
+		"name": "DESC_DIF_DATECAPTURE_TIMESTAMP",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "38",
+		"name": "FILLER",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "39",
+		"name": "POS-SEG-ECOMERCE-IND",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "40",
+		"name": "POS-SEG-CAVV-UCAF-IND",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "41",
+		"name": "POS-SEG-JIFFY-POP",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "42",
+		"name": "POS-SEG-PAN",
+		"lengthIndicator" : "fixed",
+		"length": "19",
+		"format": "ASCII"
+	},
+	{
+		"index": "43",
+		"name": "POS-SEG-POS-CC",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "44",
+		"name": "POS-SEG-ADD-AMOUNT",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "45",
+		"name": "POS-SEG-PLATFORM",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "46",
+		"name": "DESC_POS_DISPATCHER_ID",
+		"lengthIndicator" : "fixed",
+		"length": "5",
+		"format": "ASCII"
+	},
+	{
+		"index": "47",
+		"name": "DESC_POS_CVV2_PRESENT",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "48",
+		"name": "DESC_POS_CVV2_VERIFY",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "49",
+		"name": "DESC_POS_CARD_SERVICE_CODE",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "50",
+		"name": "DESC_POS_TERMINAL_CAPABILITY",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "51",
+		"name": "DESC_POS_FLAG_EMV_FULL",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "52",
+		"name": "DESC_POS_PROMO_Q6",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "53",
+		"name": "DESC_POS_FLAG_RESPONDER",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "54",
+		"name": "DESC_POS_MEDIO_ACCESO",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "55",
+		"name": "DESC_POS_SERIE_DISPOSITIVO",
+		"lengthIndicator" : "fixed",
+		"length": "18",
+		"format": "ASCII"
+	},
+	{
+		"index": "56",
+		"name": "DESC_POS_APLICACION_DISPOSITIVO",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	},
+	{
+		"index": "57",
+		"name": "DESC_POS_TRACK_COMPLETO",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "58",
+		"name": "DESC_POS_AUTHENTICATION_COLLECTOR_INDICATOR",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "59",
+		"name": "DESC_POS_TERMINAL_DATA",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "60",
+		"name": "DESC_POS_FILLER_ARQC",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	},
+	{
+		"index": "61",
+		"name": "DESC_POS_CARRIER_TPV",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "62",
+		"name": "DESC_POS_SERIE_SIM_TPV",
+		"lengthIndicator" : "fixed",
+		"length": "20",
+		"format": "ASCII"
+	},
+	{
+		"index": "63",
+		"name": "DESC_POS_FLAG_ENVIO_TABLA_BINES",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "64",
+		"name": "DESC_POS_KSN",
+		"lengthIndicator" : "fixed",
+		"length": "20",
+		"format": "ASCII"
+	},
+	{
+		"index": "65",
+		"name": "DESC_VENTANA_CORTE_BX",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "66",
+		"name": "DESC_ID_BONUS_MERCHANT_BR",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "67",
+		"name": "DESC_ID_REFERENCIA_CMP_BR",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "68",
+		"name": "DESC_NUM_CONTRATO_CR",
+		"lengthIndicator" : "fixed",
+		"length": "20",
+		"format": "ASCII"
+	},
+	{
+		"index": "69",
+		"name": "DESC_BANDERA_VALIDACION_ARQC",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "70",
+		"name": "DESC_MONTO_LOCAL_ADQ_EXTRANJERO",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "71",
+		"name": "DESC_MONEDA_LOCAL_ADQ_EXTRANJERO",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "72",
+		"name": "DESC_FLAG-TOKEN",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "73",
+		"name": "DESC_FLAG_RESP_VALIDACION_EMV",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "74",
+		"name": "DESC_TIPO_RUTEO",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "75",
+		"name": "DESC_FLAG_ORIGEN",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "76",
+		"name": "DESC_VISA_MSG_REASON_CODE",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "77",
+		"name": "DESC_VISA_POS_ENVIRONMENT",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "78",
+		"name": "DESC_UCAF_CI_ORIGINAL",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "79",
+		"name": "DESC_RAZON_DEGRAD_UCAF_CI",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "80",
+		"name": "DESC_PAIS_ADQUIRENTE",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "81",
+		"name": "DESC_BAND_DCC_ORIGEN",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "82",
+		"name": "DESC_BAND_SELECCION_DCC",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "83",
+		"name": "DESC_FLAG_AAV",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "84",
+		"name": "DESC_FLAG_DICTAMEN_DECLINACION",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "85",
+		"name": "DESC_ERROR_ISS",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "86",
+		"name": "POS-SEG-ECOMM-IND_FINAL",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "87",
+		"name": "POS-SEG-FLAG-RV-CAVV-VISA",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "88",
+		"name": "DESC_POS_NBR_VAR_FIELDS",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "89",
+		"name": "POS-SEG-FLAG-SCV-EXT",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "90",
+		"name": "CODIGO_SERVICIO_EXTENDIDO",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "91",
+		"name": "EGRESPONSABILIDADCAVVBX",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "92",
+		"name": "DESC_BAN_RUTEO_MCNAC",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "ASCII"
+	},
+	{
+		"index": "93",
+		"name": "DESC_ID_INST_EM",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "94",
+		"name": "FILLER2",
+		"lengthIndicator" : "fixed",
+		"length": "37",
+		"format": "ASCII"
+	}
+]

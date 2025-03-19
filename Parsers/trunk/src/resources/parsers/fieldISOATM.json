@@ -1,0 +1,609 @@
+[
+	{
+		"index": "0",
+		"name": "Header",
+		"lengthIndicator" : "fixed",
+		"length": "32",
+		"format": "ASCII",
+		"subfields":[
+			{
+				"name": "H1",
+				"lengthIndicator" : "fixed",
+				"length": "12",
+				"format": "ASCII"
+			},
+			
+			{
+				"name": "MTI",
+				"lengthIndicator" : "fixed",
+				"length": "4",
+				"format": "ASCII"
+			},
+			{
+				"name": "Bitmap",
+				"lengthIndicator" : "fixed",
+				"length": "16",
+				"format": "ASCII"
+			}
+		]
+	},
+	{
+		"index": "1",
+		"name": "Bitmap2",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	},
+	{
+		"index": "3",
+		"name": "Processing Code",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII",
+		"subfields":[
+			{
+				"name": "1",
+				"lengthIndicator" : "fixed",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+				"name": "2",
+				"lengthIndicator" : "fixed",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+				"name": "3",
+				"lengthIndicator" : "fixed",
+				"length": "2",
+				"format": "ASCII"
+			}
+		]
+	},
+	{
+		"index": "4",
+		"name": "Transaction Amount",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "5",
+		"name": "Transaction Amount",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "6",
+		"name": "Transaction Amount",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "7",
+		"name": "Transmission Date and Time",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "ASCII"
+	},
+	{
+		"index": "8",
+		"name": "Time",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "9",
+		"name": "Conversion Rate Settlement",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "ASCII"
+	},
+	{
+		"index": "10",
+		"name": "Channel",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "ASCII"
+	},
+	{
+		"index": "11",
+		"name": "System Trace Audit Number",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "12",
+		"name": "Local Transaction Time",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "13",
+		"name": "Local Transaction Date",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "15",
+		"name": "Settlement Date",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "16",
+		"name": "Date Convertion",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "17",
+		"name": "Capture Date",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "22",
+		"name": "Point of Service Entry Mode",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII",
+		"subfields":[
+			{
+				"name": "1",
+				"lengthIndicator" : "fixed",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+				"name": "2",
+				"lengthIndicator" : "fixed",
+				"length": "1",
+				"format": "ASCII"
+			}
+		]
+	},
+	{
+		"index": "32",
+		"name": "Acquiring Institution Code",
+		"lengthIndicator" : "LLvar",
+		"length": "11",
+		"format": "ASCII"
+	},
+	{
+		"index": "33",
+		"name": "Forwarding Institution Identification Code",
+		"lengthIndicator" : "LLvar",
+		"length": "11",
+		"format": "ASCII"
+	},
+	{
+		"index": "35",
+		"name": "Track 2 Data",
+		"lengthIndicator" : "LLvar",
+		"length": "37",
+		"format": "ASCII"
+	},
+	{
+		"index": "37",
+		"name": "Retrieval Reference Number",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "38",
+		"name": "Authorization Identification Response",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "39",
+		"name": "Response Code",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "41",
+		"name": "Card Acceptor Terminal Identification",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	},
+	{
+		"index": "43",
+		"name": "Card Acceptor Name/Location",
+		"lengthIndicator" : "fixed",
+		"length": "40",
+		"format": "ASCII"
+	},
+	{
+		"index": "44",
+		"name": "ATM Additional Response Data",
+		"lengthIndicator" : "LLvar",
+		"length": "25",
+		"format": "ASCII"
+	},
+	{
+		"index": "48",
+		"name": "ATM Additional Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "44",
+		"format": "ASCII"
+	},
+	{
+		"index": "49",
+		"name": "Transaction Currency Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "50",
+		"name": "Transaction Currency Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "51",
+		"name": "Transaction Currency Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "52",
+		"name": "Personal Identification Number",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	},
+	{
+		"index": "53",
+		"name": "Security Related Control Information",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	},
+	{
+		"index": "60",
+		"name": "ATM Terminal Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "61",
+		"name": "ATM Card Issuer and Authorizer Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "13",
+		"format": "ASCII"
+	},
+	{
+		"index": "62",
+		"name": "Reserved, Private 2",
+		"lengthIndicator" : "LLLvar",
+		"length": "13",
+		"format": "ASCII"
+	},
+	{
+		"index": "63",
+		"name": "Reserved, Private 3",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII"
+	},
+	{
+		"index": "70",
+		"name": "Network Management Information Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "90",
+		"name": "Original Data Elements",
+		"lengthIndicator" : "fixed",
+		"length": "42",
+		"format": "ASCII",
+		"subfields": [
+			{
+				"name": "ISO Original",
+				"lengthIndicator" : "fixed",
+				"length": "4",
+				"format": "ASCII"
+			},
+			{
+				"name": "RRN Original C37",
+				"lengthIndicator" : "fixed",
+				"length": "12",
+				"format": "ASCII"
+			},
+			{
+				"name": "Fecha Local Original C13",
+				"lengthIndicator" : "fixed",
+				"length": "4",
+				"format": "ASCII"
+			},
+			{
+				"name": "Hora Local Original C12",
+				"lengthIndicator" : "fixed",
+				"length": "6",
+				"format": "ASCII"
+			},
+			{
+				"name": "ceros",
+				"lengthIndicator" : "fixed",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+				"name": "Fecha Captura Original C17",
+				"lengthIndicator" : "fixed",
+				"length": "4",
+				"format": "ASCII"
+			},
+			{
+				"name": "espacios",
+				"lengthIndicator" : "fixed",
+				"length": "10",
+				"format": "ASCII"
+			}
+		]
+	},
+	{
+		"index": "95",
+		"name": "Reverso parcial",
+		"lengthIndicator" : "fixed",
+		"length": "42",
+		"format": "ASCII"
+	},
+	{
+		"index": "100",
+		"name": "Receiving Institution Identification Code",
+		"lengthIndicator" : "LLvar",
+		"length": "11",
+		"format": "ASCII"
+	},
+	{
+		"index": "102",
+		"name": "Account Identification 1",
+		"lengthIndicator" : "LLvar",
+		"length": "28",
+		"format": "ASCII"
+	},
+	{
+		"index": "103",
+		"name": "Account Identification 2",
+		"lengthIndicator" : "LLvar",
+		"length": "28",
+		"format": "ASCII"
+	},
+	{
+		"index": "110",
+		"name": "Account Identification 1",
+		"lengthIndicator" : "LLLLvar",
+		"length": "96",
+		"format": "ASCII"
+	},
+	{
+		"index": "120",
+		"name": "ATM Terminal Address-Branch-Region/Key Management",
+		"lengthIndicator" : "LLLvar",
+		"length": "33",
+		"format": "ASCII"
+	},
+	{
+		"index": "123",
+		"name": "Cryptographic Service Message",
+		"lengthIndicator" : "LLLvar",
+		"length": "150",
+		"format": "ASCII"
+	},
+	{
+		"index": "124",
+		"name": "Product Type",
+		"lengthIndicator" : "LLLvar",
+		"length": "255",
+		"format": "ASCII"
+	},
+	{
+		"index": "126",
+		"name": "POS Additional Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII",
+		"subfields": [
+			{
+				"name": "header",
+				"lengthIndicator" : "fixed",
+				"length": "12",
+				"format": "ASCII"
+			},
+			{
+				"name": "25",
+				"lengthIndicator" : "tokenISO",
+				"length": "70",
+				"format": "ASCII"
+			}, 
+			{
+				"name": "30",
+				"lengthIndicator" : "tokenISO",
+				"length": "66",
+				"format": "ASCII"
+			},
+			{
+				"name": "B1",
+				"lengthIndicator" : "tokenISO",
+				"length": "28",
+				"format": "ASCII"
+			},
+			{
+				"name": "B2",
+				"lengthIndicator" : "tokenISO",
+				"length": "158",
+				"format": "ASCII"
+			},
+			{
+				"name": "B3",
+				"lengthIndicator" : "tokenISO",
+				"length": "80",
+				"format": "ASCII"
+			},
+			{
+				"name": "B4",
+				"lengthIndicator" : "tokenISO",
+				"length": "20",
+				"format": "ASCII"
+			},
+			{
+				"name": "B5",
+				"lengthIndicator" : "tokenISO",
+				"length": "38",
+				"format": "ASCII"
+			},
+			{
+				"name": "B6",
+				"lengthIndicator" : "tokenISO",
+				"length": "260",
+				"format": "ASCII"
+			},
+			{
+				"name": "QM",
+				"lengthIndicator" : "tokenISO",
+				"length": "12",
+				"format": "ASCII"
+			},
+			{
+				"name": "Q1",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+				"name": "03",
+				"lengthIndicator" : "tokenISO",
+				"length": "6",
+				"format": "ASCII"
+			},
+			{
+				"name": "R0",
+				"lengthIndicator" : "tokenISO",
+				"length": "10",
+				"format": "ASCII"
+			},
+			{
+				"name": "QH",
+				"lengthIndicator" : "tokenISO",
+				"length": "87",
+				"format": "ASCII"
+			},
+			{
+				"name": "Q4",
+				"lengthIndicator" : "tokenISO",
+				"length": "8",
+				"format": "ASCII"
+			},
+			{
+				"name": "B0",
+				"lengthIndicator" : "tokenISO",
+				"length": "42",
+				"format": "ASCII"
+			},
+			{
+				"name": "BE",
+				"lengthIndicator" : "tokenISO",
+				"length": "62",
+				"format": "ASCII"
+			},
+			{
+				"name": "QR",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+				"name": "RC",
+				"lengthIndicator" : "tokenISO",
+				"length": "95",
+				"format": "ASCII"
+			},
+			{
+				"name": "Q2",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+				"name": "C4",
+				"lengthIndicator" : "tokenISO",
+				"length": "12",
+				"format": "ASCII"
+			},
+			{
+				"name": "C0",
+				"lengthIndicator" : "tokenISO",
+				"length": "26",
+				"format": "ASCII"
+			},
+			{
+				"name": "R7",
+				"lengthIndicator" : "tokenISO",
+				"length": "13",
+				"format": "ASCII"
+			},
+			{
+				"name": "R0",
+				"lengthIndicator" : "tokenISO",
+				"length": "10",
+				"format": "ASCII"
+			},
+			{
+				"name": "04",
+				"lengthIndicator" : "tokenISO",
+				"length": "20",
+				"format": "ASCII"
+			},
+			{
+				"name": "17",
+				"lengthIndicator" : "tokenISO",
+				"length": "24",
+				"format": "ASCII"
+			},
+			{
+				"name": "PJ",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			}
+		],
+		"subfieldsName":"Token"
+	},
+	{
+		"index": "127",
+		"name": "Informacion Sentinel",
+		"lengthIndicator" : "LLLvar",
+		"length": "255",
+		"format": "ASCII"
+	},
+	{
+		"index": "128",
+		"name": "Message Authentication",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	}
+]

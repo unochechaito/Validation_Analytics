@@ -1,0 +1,156 @@
+[
+  {
+    "index": "0",
+    "name": "FECHA-DE-CONCILIACION",
+    "lengthIndicator": "fixed",
+    "length": "6",
+    "format": "ASCII"
+  },
+  {
+    "index": "1",
+    "name": "TIPO-DESC",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "2",
+    "name": "SITE-ORIGEN",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "3",
+    "name": "PERIODO",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "4",
+    "name": "SEQ",
+    "lengthIndicator": "fixed",
+    "length": "7",
+    "format": "ASCII"
+  },
+  {
+    "index": "5",
+    "name": "ID-REGISTRO",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "6",
+    "name": "LONGITUD-REGISTRO",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "7",
+    "name": "POS-SEG-FLAG-SVC-EXT",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "8",
+    "name": "DPAN",
+    "lengthIndicator": "fixed",
+    "length": "19",
+    "format": "ASCII"
+  },
+  {
+    "index": "9",
+    "name": "FPAN",
+    "lengthIndicator": "fixed",
+    "length": "19",
+    "format": "ASCII"
+  },
+  {
+    "index": "10",
+    "name": "FLAG-ARQC-CVC3",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "11",
+    "name": "TIPO-OBS",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "12",
+    "name": "FLAG-MAPEO",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "13",
+    "name": "IND-NUM-CTA",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "14",
+    "name": "TKN-REQ-ID",
+    "lengthIndicator": "fixed",
+    "length": "11",
+    "format": "ASCII"
+  },
+  {
+    "index": "15",
+    "name": "WALLET-ID",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "16",
+    "name": "TKN-STO-TYPE",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "17",
+    "name": "TKN-ASS-LVL",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "18",
+    "name": "FILLER",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "19",
+    "name": "FILLER",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "20",
+    "name": "FILLER",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "21",
+    "name": "FILLER",
+    "lengthIndicator": "fixed",
+    "length": "51",
+    "format": "ASCII"
+  }
+]

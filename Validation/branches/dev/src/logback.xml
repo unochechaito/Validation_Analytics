@@ -1,0 +1,28 @@
+<configuration debug="true">
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <!--  encoders are  by default assigned the type
+      ch.qos.logback.classic.encoder.PatternLayoutEncoder-->
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} %-5level %logger{0} [%thread] [%M:%L]%n%msg%n</pattern>
+    </encoder>
+  </appender>
+  
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <!-- encoders are  by default assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+    <file>logs/validation.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+		<fileNamePattern>logs/validation.%d{yyyy-MM-dd}.log</fileNamePattern>
+		<maxHistory>30</maxHistory>
+	</rollingPolicy>
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} %-5level %logger{0} [%thread] [%M:%L]%n%msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="DEBUG">
+    <appender-ref ref="STDOUT" />
+    <appender-ref ref="FILE" />
+  </root>
+</configuration>

@@ -1,0 +1,324 @@
+[
+  {
+    "index": "0",
+    "name": "FECHA-DE-CONCILIACION",
+    "lengthIndicator": "fixed",
+    "length": "6",
+    "format": "ASCII"
+  },
+  {
+    "index": "1",
+    "name": "TIPO-DESC",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "2",
+    "name": "SITE-ORIGEN",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "3",
+    "name": "PERIODO",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "4",
+    "name": "SEQ",
+    "lengthIndicator": "fixed",
+    "length": "7",
+    "format": "ASCII"
+  },
+  {
+    "index": "5",
+    "name": "ID-REGISTRO",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "6",
+    "name": "LONGITUD-REGISTRO",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "7",
+    "name": "Presencia del Token",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "8",
+    "name": "Longitud del Token",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "9",
+    "name": "Transaction Category Code DE-48",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "10",
+    "name": "Payment Initiation Channel DE-48 SE 23",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "11",
+    "name": "Wallet ID DE-48 SE 26",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "12",
+    "name": "Token Transaction ID DE-48 SE 30",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "13",
+    "name": "Account Number Indicator DE-48 SE 33 SF 1",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "14",
+    "name": "Account Number DE-48 SE 33 SF 2",
+    "lengthIndicator": "fixed",
+    "length": "19",
+    "format": "ASCII"
+  },
+  {
+    "index": "15",
+    "name": "Token Expiration Date DE-48 SE 33 SF 3",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "16",
+    "name": "Token Assurance Level DE-48 SE 33 SF 5",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "17",
+    "name": "Token Requestor ID DE-48 SE 33 SF 6",
+    "lengthIndicator": "fixed",
+    "length": "11",
+    "format": "ASCII"
+  },
+  {
+    "index": "18",
+    "name": "Storage Technology DE-48 SE 33 SF 8",
+    "lengthIndicator": "fixed",
+    "length": "11",
+    "format": "ASCII"
+  },
+  {
+    "index": "19",
+    "name": "Cryptogram Validation Indicator Global 581 DE-48 SE 33 SF 9",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "20",
+    "name": "ATC Value DE-48 SE 34 SF 1",
+    "lengthIndicator": "fixed",
+    "length": "5",
+    "format": "ASCII"
+  },
+  {
+    "index": "21",
+    "name": "Discrepancy Value DE-48 SE 34 SF 2",
+    "lengthIndicator": "fixed",
+    "length": "5",
+    "format": "ASCII"
+  },
+  {
+    "index": "22",
+    "name": "ATC inside issuer definitions DE-48 SE 34 SF  3",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "23",
+    "name": "Security Protocol DE-48 SE 42 SF 1",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "24",
+    "name": "Cardholder Authentication DE-48 SE 42 SF 2",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "25",
+    "name": "UCAF Collection Indicator DE-48 SE 42 SF 3",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "26",
+    "name": "Electronic Commerce Security Level Indicator and UCAF Collection Indicator DE-48 SE 43 SF 1",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "27",
+    "name": "Time Value DE-48 SE 49 SF 1",
+    "lengthIndicator": "fixed",
+    "length": "8",
+    "format": "ASCII"
+  },
+  {
+    "index": "28",
+    "name": "Time Discrepancy DE-48 SE 49 SF 2",
+    "lengthIndicator": "fixed",
+    "length": "5",
+    "format": "ASCII"
+  },
+  {
+    "index": "29",
+    "name": "Time Discrepancy Indicator DE-48 SE 49 SF 3",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "30",
+    "name": "Merchant On-behalf (OB) Service Global 581 DE-48 SE 51 SF 1",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "31",
+    "name": "Merchant On-behalf (OB) Result 1 Global 581 New Values DE-48 SE 51 SF 2",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "32",
+    "name": "On-behalf [OB] Service DE-48 SE 71 SF 1",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "33",
+    "name": "On-behalf Result 1 DE-48 SE 71 SF 2",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "34",
+    "name": "On-behalf Result 2 DE-48 SE 71 SF 3",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "35",
+    "name": "Address Verification Service Request DE-48 SE 82",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "36",
+    "name": "The AVS response code DE-48 SE 83",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "37",
+    "name": "The CVC 2 result code DE-48 SE 87",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "38",
+    "name": "CVC 2 DE-48 SE 92",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "39",
+    "name": "Advice Reason Code DE-60 SF 1",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "40",
+    "name": "Advice Detail Code DE-60 SF 2",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "41",
+    "name": "Advice Detail Text SF3",
+    "lengthIndicator": "fixed",
+    "length": "53",
+    "format": "ASCII"
+  },
+  {
+    "index": "42",
+    "name": "POS Transaction Status DE-61 SF 7",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "43",
+    "name": "Receiving Institution ID Code DE-100",
+    "lengthIndicator": "fixed",
+    "length": "11",
+    "format": "ASCII"
+  },
+  {
+    "index": "44",
+    "name": "AVS Service Indicator 1 DE-120 SF 1",
+    "lengthIndicator": "fixed",
+    "length": "29",
+    "format": "ASCII"
+  },
+  {
+    "index": "45",
+    "name": "FILLER",
+    "lengthIndicator": "fixed",
+    "length": "36",
+    "format": "ASCII"
+  }
+]

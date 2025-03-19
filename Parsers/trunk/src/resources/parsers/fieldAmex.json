@@ -1,0 +1,764 @@
+[
+  {
+    "index": "0",
+    "name": "Header",
+    "lengthIndicator" : "fixed",
+    "length": "12",
+    "format": "EBCDIC",
+    "subfields":[
+      {
+        "name": "MTI",
+        "lengthIndicator" : "fixed",
+        "length": "4",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Bitmap",
+        "lengthIndicator" : "fixed",
+        "length": "8",
+        "format": "Binary"
+      }
+    ]
+  },
+  {
+    "index": "1",
+    "name": "Bitmap2",
+    "lengthIndicator" : "fixed",
+    "length": "8",
+    "format": "Binary"
+  },
+  {
+    "index": "2",
+    "name": "Primary Account Number",
+    "lengthIndicator" : "LLvar",
+    "length": "21",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "3",
+    "name": "Processing Code",
+    "lengthIndicator" : "fixed",
+    "length": "6",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "4",
+    "name": "Amount, Transaction",
+    "lengthIndicator" : "fixed",
+    "length": "12",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "7",
+    "name": "Date And Time, Transmission",
+    "lengthIndicator" : "fixed",
+    "length": "10",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "11",
+    "name": "System Trace Audit Number",
+    "lengthIndicator" : "fixed",
+    "length": "6",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "12",
+    "name": "Date And Time, Local Transaction",
+    "lengthIndicator" : "fixed",
+    "length": "12",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "13",
+    "name": "Date, Effective",
+    "lengthIndicator" : "fixed",
+    "length": "4",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "14",
+    "name": "Date, Expiration",
+    "lengthIndicator" : "fixed",
+    "length": "4",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "15",
+    "name": "Date, Settlement",
+    "lengthIndicator" : "fixed",
+    "length": "6",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "19",
+    "name": "Country Code, Acquiring Institution",
+    "lengthIndicator" : "fixed",
+    "length": "3",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "22",
+    "name": "Point-of-Service Data Code",
+    "lengthIndicator" : "fixed",
+    "length": "12",
+    "format": "EBCDIC",
+    "subfields": [
+      {
+        "name": "1",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "2",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "3",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "4",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "5",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "6",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "7",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "8",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "9",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "10",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "11",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "12",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      }
+    ]
+  },
+  {
+    "index": "24",
+    "name": "Function Code",
+    "lengthIndicator" : "fixed",
+    "length": "3",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "25",
+    "name": "Message Reason Code",
+    "lengthIndicator" : "fixed",
+    "length": "4",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "26",
+    "name": "Card Acceptor Business Code",
+    "lengthIndicator" : "fixed",
+    "length": "4",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "27",
+    "name": "Approval Code Length",
+    "lengthIndicator" : "fixed",
+    "length": "1",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "28",
+    "name": "Date, Reconciliation",
+    "lengthIndicator": "fixed",
+    "length": "6",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "30",
+    "name": "Amounts, Original",
+    "lengthIndicator" : "fixed",
+    "length": "24",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "31",
+    "name": "Acquirer Reference Data",
+    "lengthIndicator" : "LLvar",
+    "length": "50",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "32",
+    "name": "Acquiring Institution ID Code",
+    "lengthIndicator" : "LLvar",
+    "length": "13",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "33",
+    "name": "Forwarding Institution ID Code",
+    "lengthIndicator" : "LLvar",
+    "length": "13",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "34",
+    "name": "Primary Account Number, Extended",
+    "lengthIndicator" : "LLvar",
+    "length": "30",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "35",
+    "name": "Track 2 Data",
+    "lengthIndicator" : "LLvar",
+    "length": "39",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "37",
+    "name": "Retrieval Reference Number",
+    "lengthIndicator" : "fixed",
+    "length": "12",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "38",
+    "name": "Approval Code",
+    "lengthIndicator" : "fixed",
+    "length": "6",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "39",
+    "name": "Action Code",
+    "lengthIndicator" : "fixed",
+    "length": "3",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "41",
+    "name": "Card Acceptor Terminal ID",
+    "lengthIndicator" : "fixed",
+    "length": "8",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "42",
+    "name": "Card Acceptor ID Code",
+    "lengthIndicator" : "fixed",
+    "length": "15",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "43",
+    "name": "Card Acceptor Name/Location",
+    "lengthIndicator" : "LLvar",
+    "length": "101",
+    "format": "EBCDIC",
+    "subfields":[
+      {
+        "name": "Merchant or Seller Information",
+        "lengthIndicator" : "fixed",
+        "length": "83",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Card Acceptor Postal Code",
+        "lengthIndicator" : "fixed",
+        "length": "10",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Card Acceptor Region Code",
+        "lengthIndicator" : "fixed",
+        "length": "3",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Card Acceptor Country Code",
+        "lengthIndicator" : "fixed",
+        "length": "3",
+        "format": "EBCDIC"
+      }
+    ]
+  },
+  {
+    "index": "44",
+    "name": "Additional Response Data",
+    "lengthIndicator" : "LLvar",
+    "length": "27",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "45",
+    "name": "Track 1 Data",
+    "lengthIndicator" : "LLvar",
+    "length": "78",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "47",
+    "name": "Additional Data - National",
+    "lengthIndicator": "LLLvar",
+    "length": "304",
+    "format": "EBCDIC",
+    "subfields": [
+      {
+        "name": "Primary ID",
+        "length": "2",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Secondary ID",
+        "length": "3",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Customer Email ID",
+        "length": "3",
+        "lengthIndicator": "LLvar",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Customer Email",
+        "length": "60",
+        "lengthIndicator": "LLvar",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Customer Hostname ID",
+        "length": "3",
+        "lengthIndicator": "LLvar",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Customer Hostname",
+        "length": "60",
+        "lengthIndicator": "LLvar",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "HTTP BROWSER TYPE ID",
+        "length": "3",
+        "lengthIndicator": "LLvar",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "HTTP Browser Type",
+        "length": "60",
+        "lengthIndicator": "LLvar",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Ship To Country ID",
+        "length": "3",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Ship To Country",
+        "length": "3",
+        "lengthIndicator": "LLvar",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Shipping Method ID",
+        "length": "3",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Shipping Method",
+        "length": "2",
+        "lengthIndicator": "LLvar",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Merchant Product SKU ID",
+        "length": "3",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Merchant Product SKU",
+        "length": "15",
+        "lengthIndicator": "LLvar",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Customer IP",
+        "length": "15",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Customer ANI",
+        "length": "10",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Customer II Digits",
+        "length": "2",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      }
+    ]
+  },
+  {
+    "index": "48",
+    "name": "Additional Data - Private",
+    "lengthIndicator": "LLLvar",
+    "length": "43",
+    "format": "EBCDIC",
+    "subfields": [
+      {
+        "name": "Plan Type",
+        "length": "2",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Number of Installments",
+        "length": "2",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      }
+    ]
+  },
+  {
+    "index": "49",
+    "name": "Currency Code, Transaction",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "52",
+    "name": "Personal ID Number (PIN) Data",
+    "lengthIndicator": "fixed",
+    "length": "8",
+    "format": "Binary"
+  },
+  {
+    "index": "53",
+    "name": "Security Related Control Information",
+    "lengthIndicator": "LLvar",
+    "length": "19",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "54",
+    "name": "Amounts, Additional",
+    "lengthIndicator": "LLLvar",
+    "length": "123",
+    "format": "HEXA"
+  },
+  {
+    "index": "55",
+    "name": "Integrated Circuit Card System Related Data",
+    "lengthIndicator": "LLLvar",
+    "length": "259",
+    "format": "EBCDIC",
+    "subfields": [
+      {
+        "name": "Header Version Name",
+        "lengthIndicator" : "fixed",
+        "length": "4",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Header Version Number",
+        "length": "4",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "Application Cryptogram",
+        "length": "16",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "IAD",
+        "length": "33",
+        "lengthIndicator": "Lvar",
+        "format": "BCD"
+      },
+      {
+        "name": "Unpredictable Number",
+        "length": "8",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "ATC",
+        "length": "4",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "TVR",
+        "length": "10",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "Transaction Date",
+        "length": "6",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "Transaction Type",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "Amount Authorized",
+        "length": "12",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "Transaction Currency Code",
+        "length": "4",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "Terminal Country Code",
+        "length": "4",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "AIP",
+        "length": "4",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "Amount, Other",
+        "length": "12",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "Application PAN Sequence Number",
+        "length": "2",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      },
+      {
+        "name": "CID",
+        "length": "2",
+        "lengthIndicator": "fixed",
+        "format": "BCD"
+      }
+    ]
+  },
+  {
+    "index": "56",
+    "name": "Original Data Elements",
+    "lengthIndicator": "LLvar",
+    "length": "37",
+    "format": "EBCDIC",
+    "subfields": [
+      {
+        "name": "Message Type ID",
+        "lengthIndicator": "fixed",
+        "length": "2",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "System Trace Audit Number",
+        "lengthIndicator": "fixed",
+        "length": "6",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Date and Time, Local Transaction",
+        "lengthIndicator": "fixed",
+        "length": "12",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Acquiring Institution Identification Code",
+        "lengthIndicator": "LLvar",
+        "length": "13",
+        "format": "EBCDIC"
+      }
+    ]
+  },
+  {
+    "index": "60",
+    "name": "National Use Data",
+    "lengthIndicator" : "LLLvar",
+    "length": "143",
+    "format": "EBCDIC"
+  },
+  {
+    "name": "National Use Data",
+    "index": 61,
+    "lengthIndicator": "LLLvar",
+    "length": 103,
+    "format": "EBCDIC",
+    "subfields": [
+      {
+        "name": "Primary ID",
+        "length": 2,
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Secondary ID",
+        "length": 3,
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Bitmap ID",
+        "length": 4,
+        "lengthIndicator": "fixed",
+        "format": "Binary"
+      },
+      {
+        "name": "Seller ID",
+        "length": 20,
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Seller Email Address",
+        "length": 40,
+        "lengthIndicator": "LLvar",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "SELLER TELEPHONE",
+        "length": 20,
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Token Requestor ID (TRID)",
+        "length": 11,
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Last 4 Pan Return Indicator",
+        "length": 1,
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Original Transaction Identifier (OTID)",
+        "length": 15,
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Terminal Classification Code",
+        "length": 2,
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "National Identification Document (National ID)",
+        "length": 20,
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      }
+    ]
+  },
+  {
+    "index": "62",
+    "name": "Private Use Data",
+    "lengthIndicator" : "LLLvar",
+    "length": "63",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "63",
+    "name": "Private Use Data",
+    "lengthIndicator": "LLLvar",
+    "length": "208",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "96",
+    "name": "Key Management Data",
+    "lengthIndicator": "LLLvar",
+    "length": "17",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "111",
+    "name": "Encryption Data",
+    "lengthIndicator": "LLLLvar",
+    "length": "69",
+    "format": "EBCDIC & Binary"
+  },
+  {
+    "index": "112",
+    "name": "Payment Account Data",
+    "lengthIndicator": "LLLvar",
+    "length": "82",
+    "format": "EBCDIC"
+  }
+,
+  {
+    "index": "113",
+    "name": "Acceptance Environment Data",
+    "lengthIndicator": "LLLvar",
+    "length": "18",
+    "format": "EBCDIC"
+  }
+]
+

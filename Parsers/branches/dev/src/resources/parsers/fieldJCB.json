@@ -1,0 +1,779 @@
+[
+  {
+    "name": "Header",
+    "format": "EBCDIC",
+    "length": "12",
+    "index": "0",
+    "lengthIndicator" : "fixed",
+    "subfields":[
+      {
+        "name": "MTI",
+        "format": "EBCDIC",
+        "length": "4",
+        "lengthIndicator" : "fixed"
+      },
+      {
+        "name": "Bitmap",
+        "format": "Binary",
+        "length": "8",
+        "lengthIndicator" : "fixed"
+      }
+    ]
+  },
+  {
+    "name": "Bitmap2",
+    "format": "Binary",
+    "length": 8,
+    "index": "1",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Primary Account Number",
+    "format": "OCT",
+    "length": 19,
+    "index": "2",
+    "lengthIndicator": "Lvar"
+  },
+  {
+    "name": "Processing Code",
+    "format": "BCD",
+    "length": 6,
+    "index": "3",
+    "lengthIndicator": "fixed",
+    "subfields": [
+			{
+				"name": "1",
+				"length": "2",
+				"lengthIndicator": "fixed",
+				"format": "BCD"
+			},
+			{
+				"name": "2",
+				"length": "2",
+				"lengthIndicator": "fixed",
+				"format": "BCD"
+			},
+			{
+				"name": "3",
+				"length": "2",
+				"lengthIndicator": "fixed",
+				"format": "BCD"
+			}
+		]
+  },
+  {
+    "name": "Amount, transaction",
+    "format": "BCD",
+    "length": 12,
+    "index": "4",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Amount, reconciliation",
+    "format": "BCD",
+    "length": 12,
+    "index": "5",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Amount, cardholder billing",
+    "format": "BCD",
+    "length": 12,
+    "index": "6",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Transmission date and time",
+    "format": "BCD",
+    "length": 10,
+    "index": "7",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Amount, cardholder billing fee",
+    "format": "BCD",
+    "length": 8,
+    "index": "8",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Conversion rate, settlement",
+    "format": "BCD",
+    "length": 8,
+    "index": "9",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Conversion rate, cardholder billing",
+    "format": "BCD",
+    "length": 8,
+    "index": "10",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "System trace audit number",
+    "format": "BCD",
+    "length": 6,
+    "index": "11",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Time, local transaction",
+    "format": "BCD",
+    "length": 6,
+    "index": "12",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Date, local transaction",
+    "format": "BCD",
+    "length": 4,
+    "index": "13",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Date, expiration",
+    "format": "BCD",
+    "length": 4,
+    "index": "14",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Settlement date",
+    "format": "BCD",
+    "length": 4,
+    "index": "15",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Date, conversion",
+    "format": "BCD",
+    "length": 4,
+    "index": "16",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Date, capture",
+    "format": "BCD",
+    "length": 4,
+    "index": "17",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Merchant´s type",
+    "format": "BCD",
+    "length": 4,
+    "index": "18",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Country code, acquiring institution",
+    "format": "BCD",
+    "length": 3,
+    "index": "19",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Country code, primary account number",
+    "format": "BCD",
+    "length": 3,
+    "index": "20",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Country code, forwarding institution",
+    "format": "BCD",
+    "length": 3,
+    "index": "21",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Point of service entry mode",
+    "format": "BCD",
+    "length": 4,
+    "index": "22",
+    "lengthIndicator": "fixed",
+    "subfields": [
+			{
+				"name": "1",
+				"length": "2",
+				"lengthIndicator": "fixed",
+				"format": "BCD"
+			},
+			{
+				"name": "2",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "BCD"
+			}
+		]
+  },
+  {
+    "name": "Card sequence number",
+    "format": "BCD",
+    "length": 4,
+    "index": "23",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Network international identifier",
+    "format": "BCD",
+    "length": 3,
+    "index": "24",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Point of service condition code",
+    "format": "BCD",
+    "length": 2,
+    "index": "25",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Point of service PIN capture code",
+    "format": "BCD",
+    "length": 2,
+    "index": "26",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Authorization identification response length",
+    "format": "BCD",
+    "length": 1,
+    "index": "27",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Amount, transaction fee",
+    "format": "EBCDIC",
+    "length": 9,
+    "index": "28",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Amount, settlement fee",
+    "format": "BCD",
+    "length": 9,
+    "index": "29",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Amount, transaction processing fee",
+    "format": "BCD",
+    "length": 9,
+    "index": "30",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Amount, settlement processing fee",
+    "format": "BCD",
+    "length": 9,
+    "index": "31",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Acquiring institution identification code",
+    "format": "BCD",
+    "length": 11,
+    "index": "32",
+    "lengthIndicator": "Lvar"
+  },
+  {
+    "name": "Forwarding institution identification code",
+    "format": "BCD",
+    "length": 11,
+    "index": "33",
+    "lengthIndicator": "Lvar"
+  },
+  {
+    "name": "Primary account number, extended",
+    "format": "BCD",
+    "length": 28,
+    "index": "34",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Track 2 data",
+    "format": "BCD",
+    "length": 40,
+    "index": "35",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Track 3 data",
+    "format": "BCD",
+    "length": 104,
+    "index": "36",
+    "lengthIndicator": "LLLvar"
+  },
+  {
+    "name": "Retrieval reference number",
+    "format": "EBCDIC",
+    "length": 12,
+    "index": "37",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Authorization identification response",
+    "format": "EBCDIC",
+    "length": 6,
+    "index": "38",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Response code",
+    "format": "EBCDIC",
+    "length": 2,
+    "index": "39",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Service restriction code",
+    "format": "EBCDIC",
+    "length": 3,
+    "index": "40",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Card acceptor terminal identification code",
+    "format": "EBCDIC",
+    "length": 8,
+    "index": "41",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Card acceptor identification code",
+    "format": "EBCDIC",
+    "length": 15,
+    "index": "42",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Card acceptor name and location",
+    "format": "EBCDIC",
+    "length": 40,
+    "index": "43",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Additional response data",
+    "format": "EBCDIC",
+    "length": 99,
+    "index": "44",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Track 1 data",
+    "format": "Alphanumeric",
+    "length": 76,
+    "index": "45",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Additional data, ISO",
+    "format": "Alphanumeric",
+    "length": 76,
+    "index": "46",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Additional data, national",
+    "format": "Alphanumeric",
+    "length": 255,
+    "index": "47",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Additional data, private",
+    "format": "Binary",
+    "length": "255",
+    "index": "48",
+    "lengthIndicator" : "LLLvar"
+  },
+  {
+    "name": "Currency Code, transaction",
+    "format": "EBCDIC",
+    "length": "3",
+    "index": "49",
+    "lengthIndicator" : "fixed"
+  },
+  {
+    "name": "Currency code, settlement",
+    "format": "EBCDIC",
+    "length": 3,
+    "index": "50",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Currency code, cardholder billing",
+    "format": "EBCDIC",
+    "length": 3,
+    "index": "51",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "PIN data",
+    "format": "Binary",
+    "length": 8,
+    "index": "52",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Security related control information",
+    "format": "BCD",
+    "length": 16,
+    "index": "53",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Additional Amounts",
+    "format": "Binary",
+    "length": 120,
+    "index": "54",
+    "lengthIndicator": "LLLvar"
+  },
+  {
+    "name": "Integrated Circuit Card ICC",
+    "format": "BCD",
+    "length": 255,
+    "index": "55",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "STIP related information",
+    "format": "Binary",
+    "length": 255,
+    "index": "60",
+    "lengthIndicator": "LLLvar"
+  },
+  {
+    "name": "Point of service information",
+    "format": "Binary",
+    "length": 255,
+    "index": "61",
+    "lengthIndicator": "LLLvar"
+  },
+  {
+    "name": "Reserved private",
+    "format": "Binary",
+    "length": 999,
+    "index": "62",
+    "lengthIndicator": "LLLvar"
+  },
+  {
+    "name": "Transaction code",
+    "format": "Binary",
+    "length": 255,
+    "index": "63",
+    "lengthIndicator": "LLLvar"
+  },
+  {
+    "name": "Message authentication code",
+    "format": "Binary",
+    "length": 8,
+    "index": "64",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Reserved ISO",
+    "format": "Binary",
+    "length": 8,
+    "index": "65",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Settlement code",
+    "format": "Binary",
+    "length": 1,
+    "index": "66",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Extended payment data",
+    "format": "Binary",
+    "length": 1,
+    "index": "67",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Receiving institution country code",
+    "format": "Binary",
+    "length": 2,
+    "index": "68",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Settlement institution country code",
+    "format": "Binary",
+    "length": 2,
+    "index": "69",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Network management information code",
+    "format": "BCD",
+    "length": 3,
+    "index": "70",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Message number",
+    "format": "BCD",
+    "length": 4,
+    "index": "71",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Message number last",
+    "format": "BCD",
+    "length": 4,
+    "index": "72",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Date, action",
+    "format": "BCD",
+    "length": 6,
+    "index": "73",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Credits, number",
+    "format": "BCD",
+    "length": 10,
+    "index": "74",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Credits, reversal number",
+    "format": "BCD",
+    "length": 10,
+    "index": "75",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Debits, number",
+    "format": "BCD",
+    "length": 10,
+    "index": "76",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Debits, reversal number",
+    "format": "BCD",
+    "length": 10,
+    "index": "77",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Transfer number",
+    "format": "BCD",
+    "length": 10,
+    "index": "78",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Transfer, reversal number",
+    "format": "BCD",
+    "length": 10,
+    "index": "79",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Inquiries, number",
+    "format": "BCD",
+    "length": 10,
+    "index": "80",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Authorizations, number",
+    "format": "BCD",
+    "length": 10,
+    "index": "81",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Credits, processing fee amount",
+    "format": "BCD",
+    "length": 10,
+    "index": "82",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Credits, transaction fee amount",
+    "format": "BCD",
+    "length": 10,
+    "index": "83",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Debits, processing fee amount",
+    "format": "BCD",
+    "length": 10,
+    "index": "84",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Debits, transaction fee amount",
+    "format": "BCD",
+    "length": 10,
+    "index": "85",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Credits, amount",
+    "format": "BCD",
+    "length": 16,
+    "index": "86",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Credits, reversal amount",
+    "format": "BCD",
+    "length": 16,
+    "index": "87",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Debits, amount",
+    "format": "BCD",
+    "length": 16,
+    "index": "88",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Debits, reversal amount",
+    "format": "BCD",
+    "length": 16,
+    "index": "89",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Original data elements",
+    "format": "BCD",
+    "length": 42,
+    "index": "90",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "File update code",
+    "format": "EBCDIC",
+    "length": 1,
+    "index": "91",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "File security code",
+    "format": "EBCDIC",
+    "length": 2,
+    "index": "92",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "File security code",
+    "format": "EBCDIC",
+    "length": 5,
+    "index": "93",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Service indicator",
+    "format": "EBCDIC",
+    "length": 7,
+    "index": "94",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Replacement amounts",
+    "format": "EBCDIC",
+    "length": 41,
+    "index": "95",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Message security code for single DES",
+    "format": "Binary",
+    "length": 8,
+    "index": "96",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Amount, net settlement",
+    "format": "BCD",
+    "length": 17,
+    "index": "97",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Payee",
+    "format": "EBCDIC",
+    "length": 25,
+    "index": "98",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Settlement institution identification code",
+    "format": "BCD",
+    "length": 11,
+    "index": "99",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Receiving institution identification code",
+    "format": "BCD",
+    "length": 11,
+    "index": "100",
+    "lengthIndicator": "Lvar"
+  },
+  {
+    "name": "File name",
+    "format": "EBCDIC",
+    "length": 17,
+    "index": "101",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Account identification 1",
+    "format": "EBCDIC",
+    "length": 28,
+    "index": "102",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Account identification 2",
+    "format": "EBCDIC",
+    "length": 28,
+    "index": "103",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Transaction description",
+    "format": "EBCDIC",
+    "length": 100,
+    "index": "104",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Message security code for triple DES",
+    "format": "Binary",
+    "length": 16,
+    "index": "105",
+    "lengthIndicator": "fixed"
+  },
+  {
+    "name": "Record data",
+    "format": "EBCDIC",
+    "length": 30,
+    "index": "120",
+    "lengthIndicator": "LLvar"
+  },
+  {
+    "name": "Negative data access code",
+    "format": "EBCDIC",
+    "length": 6,
+    "index": "127",
+    "lengthIndicator": "LLLvar"
+  }
+]
+

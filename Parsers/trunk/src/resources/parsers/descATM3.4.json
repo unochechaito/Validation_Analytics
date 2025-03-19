@@ -1,0 +1,794 @@
+{
+    "DESC_ATM-TRANS-FI-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "1",
+        "END": "5"
+    },
+    "DESC_ATM-TRANS-ABA-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "6",
+        "END": "10"
+    },
+    "DESC_ATM-TRANS-BR-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "11",
+        "END": "15"
+    },
+    "DESC_ATM-APPL-NAME": {
+        "TIPO": "X(2)",
+        "LONG": "2",
+        "START": "16",
+        "END": "17"
+    },
+    "DESC_ATM-TRML-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "18",
+        "END": "22"
+    },
+    "DESC_ATM-TRML-SEQ-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "23",
+        "END": "27"
+    },
+    "DESC_ATM-TRML-RECEIPT-NBR": {
+        "TIPO": "9(6)",
+        "LONG": "6",
+        "START": "28",
+        "END": "33"
+    },
+    "DESC_ATM-TRML-TYPE-CODE": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "34",
+        "END": "34"
+    },
+    "DESC_ATM-TRML-SUBTYPE-CODE": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "35",
+        "END": "35"
+    },
+    "DESC_ATM-OPERATING-FI-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "36",
+        "END": "40"
+    },
+    "DESC_ATM-OPERATING-ABA-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "41",
+        "END": "45"
+    },
+    "DESC_ATM-OPERATING-BR-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "46",
+        "END": "50"
+    },
+    "DESC_ATM-OPERATOR-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "51",
+        "END": "55"
+    },
+    "DESC_ATM-TRAN-CODE": {
+        "TIPO": "9(4)",
+        "LONG": "4",
+        "START": "56",
+        "END": "59"
+    },
+    "DESC_ATM-RESULT-CODE": {
+        "TIPO": "9(4)",
+        "LONG": "4",
+        "START": "60",
+        "END": "63"
+    },
+    "DESC_ATM-TRAN-DATE": {
+        "TIPO": "9(8)",
+        "LONG": "8",
+        "START": "64",
+        "END": "71"
+    },
+    "DESC_ATM-TRAN-TIME": {
+        "TIPO": "9(6)",
+        "LONG": "6",
+        "START": "72",
+        "END": "77"
+    },
+    "DESC_ATM-SERVICE-ID": {
+        "TIPO": "X(2)",
+        "LONG": "2",
+        "START": "78",
+        "END": "79"
+    },
+    "DESC_ATM-FORCE-POST-IND  ": {
+        "TIPO": "9(1)",
+        "LONG": "1",
+        "START": "80",
+        "END": "80"
+    },
+    "DESC_ATM-REVERSAL-IND": {
+        "TIPO": "9(1)",
+        "LONG": "1",
+        "START": "81",
+        "END": "81"
+    },
+    "DESC_ATM-CARD-FI-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "82",
+        "END": "86"
+    },
+    "DESC_ATM-CARD-BR-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "87",
+        "END": "91"
+    },
+    "DESC_ATM-CARD-APPL-CODE": {
+        "TIPO": "X(2)",
+        "LONG": "2",
+        "START": "92",
+        "END": "93"
+    },
+    "DESC_ATM-CARD-MEMBER": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "94",
+        "END": "98"
+    },
+    "DESC_ATM-CARD-LOI  ": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "99",
+        "END": "103"
+    },
+    "DESC_ATM-AUTH-METHOD": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "104",
+        "END": "104"
+    },
+    "DESC_ATM-AUTH-IND  ": {
+        "TIPO": "9(1)",
+        "LONG": "1",
+        "START": "105",
+        "END": "105"
+    },
+    "DESC_ATM-FILLER": {
+        "TIPO": "X(2)",
+        "LONG": "2",
+        "START": "106",
+        "END": "107"
+    },
+    "DESC_ATM-POS-DATA-IND  ": {
+        "TIPO": "9(1)",
+        "LONG": "1",
+        "START": "108",
+        "END": "108"
+    },
+    "DESC_ATM-SWTOUT-RESP-TICKS": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "109",
+        "END": "113"
+    },
+    "DESC_ATM-PREV-XACT-RESP-TICKS": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "114",
+        "END": "118"
+    },
+    "DESC_ATM-PREV-XACT-SEQ-NBR  ": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "119",
+        "END": "123"
+    },
+    "DESC_ATM-PRE-SEGMENT-LENGTH  ": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "124",
+        "END": "128"
+    },
+    "DESC_ATM-TRANS-UNIQUE-DATA": {
+        "TIPO": "X(112)",
+        "LONG": "112",
+        "START": "129",
+        "END": "240"
+    },
+    "FILLER": {
+        "TIPO": "X(59)",
+        "LONG": "59",
+        "START": "942",
+        "END": "1000"
+    },
+    "DESC_ATM-AMT-DEBIT": {
+        "TIPO": "S9(10)V99",
+        "LONG": "13",
+        "START": "129",
+        "END": "141"
+    },
+    "DESC_ATM-SERIAL-NBR": {
+        "TIPO": "9(10)",
+        "LONG": "10",
+        "START": "142",
+        "END": "151"
+    },
+    "DESC_ATM-DEBIT-MAX-IND": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "152",
+        "END": "156"
+    },
+    "DESC_ATM-BILL-COUNT-DEBITS": {
+        "TIPO": "X(18)",
+        "LONG": "18",
+        "START": "157",
+        "END": "174"
+    },
+    "DESC_ATM-REVERSAL-AMT": {
+        "TIPO": "S9(10)V99",
+        "LONG": "13",
+        "START": "129",
+        "END": "141"
+    },
+    "DESC_ATM-ORIG-SEQ-NBR": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "142",
+        "END": "146"
+    },
+    "DESC_ATM-REVERSAL-AMT-CASH": {
+        "TIPO": "S9(10)V99",
+        "LONG": "13",
+        "START": "147",
+        "END": "159"
+    },
+    "DESC_ATM-REVERSAL-CHK-CRDT": {
+        "TIPO": "S9(10)V99",
+        "LONG": "13",
+        "START": "160",
+        "END": "172"
+    },
+    "DESC_ATM-ORIG-TRAN-CODE": {
+        "TIPO": "9(4)",
+        "LONG": "4",
+        "START": "173",
+        "END": "176"
+    },
+    "DESC_ATM-ORIG-RECEIPT-NBR": {
+        "TIPO": "9(10)",
+        "LONG": "10",
+        "START": "177",
+        "END": "186"
+    },
+    "DESC_ATM-ORIG-DEBIT-MAX-IND": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "187",
+        "END": "191"
+    },
+    "DESC_ATM-REVERSAL-CHECK-IN": {
+        "TIPO": "S9(10)V99",
+        "LONG": "13",
+        "START": "192",
+        "END": "204"
+    },
+    "DESC_ATM-REVERSAL-CASH-OUT": {
+        "TIPO": "S9(10)V99",
+        "LONG": "13",
+        "START": "205",
+        "END": "217"
+    },
+    "DESC_ATM-BILL-COUNT-REVERSALS": {
+        "TIPO": "X(18)",
+        "LONG": "18",
+        "START": "218",
+        "END": "235"
+    },
+    "DESC_ATM-SWITCH-SEQ-NBR": {
+        "TIPO": "X(6)",
+        "LONG": "6",
+        "START": "241",
+        "END": "246"
+    },
+    "DESC_ATM-SWITCH-NETWORK-ID": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "247",
+        "END": "251"
+    },
+    "DESC_ATM-SWITCH-BUS-DATE": {
+        "TIPO": "9(6)",
+        "LONG": "6",
+        "START": "252",
+        "END": "257"
+    },
+    "DESC_ATM-SWITCH-IN-NETWORK-ID": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "258",
+        "END": "262"
+    },
+    "DESC_ATM-SWITCH-IN-SEQ-NBR": {
+        "TIPO": "X(6)",
+        "LONG": "6",
+        "START": "263",
+        "END": "268"
+    },
+    "SEG-TRAN-TYPE": {
+        "TIPO": "X(4)",
+        "LONG": "4",
+        "START": "269",
+        "END": "272"
+    },
+    "SEG-TT": {
+        "TIPO": "X(4)",
+        "LONG": "4",
+        "START": "273",
+        "END": "276"
+    },
+    "SEG-RRN": {
+        "TIPO": "X(12)",
+        "LONG": "12",
+        "START": "277",
+        "END": "288"
+    },
+    "SEG-TRAN-DATE": {
+        "TIPO": "X(4)",
+        "LONG": "4",
+        "START": "289",
+        "END": "292"
+    },
+    "SEG-TRAN-TIME": {
+        "TIPO": "X(6)",
+        "LONG": "6",
+        "START": "293",
+        "END": "298"
+    },
+    "SEG-CAPTURE-DATE  ": {
+        "TIPO": "X(4)",
+        "LONG": "4",
+        "START": "299",
+        "END": "302"
+    },
+    "SEG-GMT-TIME": {
+        "TIPO": "X(10)",
+        "LONG": "10",
+        "START": "303",
+        "END": "312"
+    },
+    "SEG-PROCESSING-CODE": {
+        "TIPO": "9(6)",
+        "LONG": "6",
+        "START": "313",
+        "END": "318"
+    },
+    "SEG-MERCHANT-TYPE": {
+        "TIPO": "X(4)",
+        "LONG": "4",
+        "START": "319",
+        "END": "322"
+    },
+    "SEG-POS-ENTRY-MODE": {
+        "TIPO": "X(3)",
+        "LONG": "3",
+        "START": "323",
+        "END": "325"
+    },
+    "SEG-RESPONSE-CODE": {
+        "TIPO": "X(2)",
+        "LONG": "2",
+        "START": "326",
+        "END": "327"
+    },
+    "SEG-AUTH-CODE": {
+        "TIPO": "X(6)",
+        "LONG": "6",
+        "START": "328",
+        "END": "333"
+    },
+    "SEG-STAN": {
+        "TIPO": "9(6)",
+        "LONG": "6",
+        "START": "334",
+        "END": "339"
+    },
+    "SEG-SETTLEMENT-DATE": {
+        "TIPO": "9(4)",
+        "LONG": "4",
+        "START": "340",
+        "END": "343"
+    },
+    "SEG-CARD-ACCEPTR-ID": {
+        "TIPO": "X(16)",
+        "LONG": "16",
+        "START": "344",
+        "END": "359"
+    },
+    "SEG-CARD-ACCEPTR-DATA": {
+        "TIPO": "X(40)",
+        "LONG": "40",
+        "START": "360",
+        "END": "399"
+    },
+    "SEG-ACCT-TYPE": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "400",
+        "END": "400"
+    },
+    "SEG-CCY-CODE": {
+        "TIPO": "X(3)",
+        "LONG": "3",
+        "START": "401",
+        "END": "403"
+    },
+    "SEG-OUT-SWAP": {
+        "TIPO": "9(5)",
+        "LONG": "5",
+        "START": "404",
+        "END": "408"
+    },
+    "SEG-LEN-ACCT": {
+        "TIPO": "9(2)",
+        "LONG": "2",
+        "START": "409",
+        "END": "410"
+    },
+    "SEG-TRACK2": {
+        "TIPO": "X(19)",
+        "LONG": "19",
+        "START": "411",
+        "END": "429"
+    },
+    "SEG-ACQ-INST-ID  ": {
+        "TIPO": "X(11)  ",
+        "LONG": "11",
+        "START": "430",
+        "END": "440"
+    },
+    "SEG-NETW-ATM-GEN-PUR": {
+        "TIPO": "X(44)",
+        "LONG": "44",
+        "START": "441",
+        "END": "484"
+    },
+    "SEG-125": {
+        "TIPO": "X(44)",
+        "LONG": "44",
+        "START": "441",
+        "END": "484"
+    },
+    "SEG-126": {
+        "TIPO": "X(44)",
+        "LONG": "44",
+        "START": "441",
+        "END": "484"
+    },
+    "SEG-TERMINAL": {
+        "TIPO": "X(16)",
+        "LONG": "16",
+        "START": "485",
+        "END": "500"
+    },
+    "SEG-ISS-ACQ-DATA": {
+        "TIPO": "X(19)",
+        "LONG": "19",
+        "START": "501",
+        "END": "519"
+    },
+    "SEG-ISS-TRAN-DATA": {
+        "TIPO": "X(10)",
+        "LONG": "10",
+        "START": "520",
+        "END": "529"
+    },
+    "SEG-PIN-OFFSET": {
+        "TIPO": "X(16)  ",
+        "LONG": "16",
+        "START": "530",
+        "END": "545"
+    },
+    "SEG-REPL-AMT  ": {
+        "TIPO": "S9(11)V99",
+        "LONG": "14",
+        "START": "546",
+        "END": "559"
+    },
+    "SEG-RCV-INST-ID": {
+        "TIPO": "X(11)",
+        "LONG": "11",
+        "START": "560",
+        "END": "570"
+    },
+    "SEG-FROM-ACCT": {
+        "TIPO": "X(28)",
+        "LONG": "28",
+        "START": "571",
+        "END": "598"
+    },
+    "SEG-TRML-ABR": {
+        "TIPO": "X(33)",
+        "LONG": "33",
+        "START": "599",
+        "END": "631"
+    },
+    "SEG-JIFFY-POP  ": {
+        "TIPO": "9(2)V99",
+        "LONG": "4",
+        "START": "632",
+        "END": "635"
+    },
+    "SEG-126-TK25-SCHG-AMT": {
+        "TIPO": "X(19)",
+        "LONG": "19",
+        "START": "636",
+        "END": "654"
+    },
+    "SEG-126-TK30-LFEE-AMT": {
+        "TIPO": "X(19)",
+        "LONG": "19",
+        "START": "655",
+        "END": "673"
+    },
+    "SEG-126-TK30-USOLINEA-AMT": {
+        "TIPO": "X(19)",
+        "LONG": "19",
+        "START": "674",
+        "END": "692"
+    },
+    "SEG-126-TKB1-BANCO": {
+        "TIPO": "X(20)",
+        "LONG": "20",
+        "START": "693",
+        "END": "712"
+    },
+    "SEG-126-SCHG-FLAG": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "713",
+        "END": "713"
+    },
+    "SEG-COD-SERVICIO-TRACK": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "714",
+        "END": "714"
+    },
+    "SEG-BANDERA-PRESENCIA-TKB4": {
+        "TIPO": "X(2)",
+        "LONG": "2",
+        "START": "715",
+        "END": "716"
+    },
+    "SEG-126-TKB4-ENTRY-MODE": {
+        "TIPO": "X(2)",
+        "LONG": "2",
+        "START": "717",
+        "END": "718"
+    },
+    "SEG-126-TKB4-CAP-PIN": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "719",
+        "END": "719"
+    },
+    "SEG-126-TKB4-TERM-CAP": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "720",
+        "END": "720"
+    },
+    "SEG-126-TKB4-PAN-SEQ-NBR": {
+        "TIPO": "X(2)",
+        "LONG": "2",
+        "START": "721",
+        "END": "722"
+    },
+    "SEG-126-TKB4-ARQC-VRFY": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "723",
+        "END": "723"
+    },
+    "SEG-BANDERA-PRESENCIA-TKB2": {
+        "TIPO": "X(2)",
+        "LONG": "2",
+        "START": "724",
+        "END": "725"
+    },
+    "SEG-126-TKB2-ARQC": {
+        "TIPO": "X(16)",
+        "LONG": "16",
+        "START": "726",
+        "END": "741"
+    },
+    "SEG-BANDERA-PRESENCIA-TKB5": {
+        "TIPO": "X(2)",
+        "LONG": "2",
+        "START": "742",
+        "END": "743"
+    },
+    "SEG-126-TKB5-ARPC": {
+        "TIPO": "X(16)",
+        "LONG": "16",
+        "START": "744",
+        "END": "759"
+    },
+    "SEG-126-TKB5-ARPC-RESP-CODE": {
+        "TIPO": "X(4)",
+        "LONG": "4",
+        "START": "760",
+        "END": "763"
+    },
+    "SEG-126-TKQ1-CAM-EMISOR": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "764",
+        "END": "764"
+    },
+    "SEG- X- TKB3-TAG9f33-TERM-CAP": {
+        "TIPO": "X(8)",
+        "LONG": "8",
+        "START": "765",
+        "END": "772"
+    },
+    "SEG-ADD-DATA-TXN-AMT (DE004)": {
+        "TIPO": "S9(10)V99",
+        "LONG": "12",
+        "START": "773",
+        "END": "784"
+    },
+    "SEG-ADD-DATA-TXN-CCY-CODE (DE049)": {
+        "TIPO": "X(3)",
+        "LONG": "3",
+        "START": "785",
+        "END": "787"
+    },
+    "SEG-ADD-DATA-SETT-AMT (DE005)": {
+        "TIPO": "S9(10)V99",
+        "LONG": "12",
+        "START": "788",
+        "END": "799"
+    },
+    "SEG-ADD-DATA-SETT-CCY-CODE (DE050)": {
+        "TIPO": "X(3)",
+        "LONG": "3",
+        "START": "800",
+        "END": "802"
+    },
+    "SEG-ADD-DATA-SURCHARCE-AMT-DCC": {
+        "TIPO": "S9(10)V99",
+        "LONG": "12",
+        "START": "803",
+        "END": "814"
+    },
+    "SEG-ADD-TASA-CONV-DCC": {
+        "TIPO": "S9(10)V99",
+        "LONG": "8",
+        "START": "815",
+        "END": "822"
+    },
+    "SEG-RESPONSABILIDAD-EMV": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "823",
+        "END": "823"
+    },
+    "SEG-RRN-ISS": {
+        "TIPO": "X(12)",
+        "LONG": "12",
+        "START": "824",
+        "END": "835"
+    },
+    "SEG-INDI-RESULTADO-LIMITE-RISCK": {
+        "TIPO": "X(2)",
+        "LONG": "2",
+        "START": "836",
+        "END": "837"
+    },
+    "ADD-DATA-TXN-AMT (DE004)": {
+        "TIPO": "S9(10)V99",
+        "LONG": "12",
+        "START": "838",
+        "END": "849"
+    },
+    "ADD-DATA-TXN-CCY-CODE (DE049)": {
+        "TIPO": "X(3)",
+        "LONG": "3",
+        "START": "850",
+        "END": "852"
+    },
+    "ADD-DATA-SETT-AMT (DE005)": {
+        "TIPO": "S9(10)V99",
+        "LONG": "12",
+        "START": "853",
+        "END": "864"
+    },
+    "ADD-DATA-SETT-CCY-CODE (DE050)": {
+        "TIPO": "X(3)",
+        "LONG": "3",
+        "START": "865",
+        "END": "867"
+    },
+    "MONTO-FACTURACION (DE006) ": {
+        "TIPO": "S9(10)V99",
+        "LONG": "12",
+        "START": "868",
+        "END": "879"
+    },
+    "MONEDA-FACTURACION (DE051)": {
+        "TIPO": "X(3)",
+        "LONG": "3",
+        "START": "880",
+        "END": "882"
+    },
+    "MARK-UP": {
+        "TIPO": "9(8)",
+        "LONG": "8",
+        "START": "883",
+        "END": "890"
+    },
+    "TIPO-CAMBIO-BANXICO": {
+        "TIPO": "9(11)",
+        "LONG": "11",
+        "START": "891",
+        "END": "901"
+    },
+    "FACTOR-CONVERSION": {
+        "TIPO": "9(11)",
+        "LONG": "11",
+        "START": "902",
+        "END": "912"
+    },
+    "TIPO-CAMBIO-MARCA": {
+        "TIPO": "9(8)",
+        "LONG": "8",
+        "START": "913",
+        "END": "920"
+    },
+    "TIPO-CAMBIO-OTRAS-MONEDAS": {
+        "TIPO": "X(11)",
+        "LONG": "11",
+        "START": "921",
+        "END": "931"
+    },
+    "INDI-OPERATIVA-INTERNA": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "932",
+        "END": "932"
+    },
+    "DESC_BAN_RUTEO_MCNAC": {
+        "TIPO": "X(1)",
+        "LONG": "1",
+        "START": "933",
+        "END": "933"
+    },
+    "DESC_ID_INST_EM": {
+        "TIPO": "9(6)",
+        "LONG": "6",
+        "START": "934",
+        "END": "939"
+    },
+    "BANDERA STANDIN": {
+        "TIPO": "9(1)",
+        "LONG": "1",
+        "START": "940",
+        "END": "940"
+    },
+    "TIPO-AUTORIZACION-VTA-GENERICA": {
+        "TIPO": "9(1)",
+        "LONG": "1",
+        "START": "941",
+        "END": "941"
+    }
+}

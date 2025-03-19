@@ -1,0 +1,81 @@
+[
+  {
+    "index": "0",
+    "name": "HEADER",
+    "lengthIndicator": "fixed",
+    "length": "24",
+    "format": "ASCII",
+    "subfields": [
+      {
+        "name": "FECHA-DE-CONCILIACION",
+        "lengthIndicator": "fixed",
+        "length": "6",
+        "format": "ASCII"
+      },
+      {
+        "name": "TIPO-DESC",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "SITE-ORIGEN",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "PERIODO",
+        "lengthIndicator": "fixed",
+        "length": "2",
+        "format": "ASCII"
+      },
+      {
+        "name": "SEQ",
+        "lengthIndicator": "fixed",
+        "length": "7",
+        "format": "ASCII"
+      },
+      {
+        "name": "ID-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "3",
+        "format": "ASCII"
+      },
+      {
+        "name": "LONGITUD-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "4",
+        "format": "ASCII"
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "name": "IMPORTE_PUNTOS_CHEQUE_FIRMA",
+    "lengthIndicator": "fixed",
+    "length": 12,
+    "format": "ASCII"
+  },
+  {
+    "index": 2,
+    "name": "IMPORTE_DE_BENEFICIOS_PUNTOS_SUR_FIRMA",
+    "lengthIndicator": "fixed",
+    "length": 12,
+    "format": "ASCII"
+  },
+  {
+    "index": 3,
+    "name": "PLAZO_EXTRA",
+    "lengthIndicator": "fixed",
+    "length": 2,
+    "format": "ASCII"
+  },
+  {
+    "index": 4,
+    "name": "PLAZO_DELAY_DAY",
+    "lengthIndicator": "fixed",
+    "length": 4,
+    "format": "ASCII"
+  }
+]

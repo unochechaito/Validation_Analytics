@@ -1,0 +1,1255 @@
+[
+	{
+		"index": "0",
+		"name": "Header",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII",
+		"subfields":[
+			{
+				"name": "MTI",
+				"lengthIndicator" : "fixed",
+				"length": "4",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "Bitmap",
+				"lengthIndicator" : "fixed",
+				"length": "8",
+				"format": "BCD"
+			}
+		]
+	},
+	{
+		"index": "1",
+		"name": "Bitmap2",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "BCD"
+	},
+	{
+		"index": "2",
+		"name": "Primary Account Number",
+		"lengthIndicator" : "LLvar",
+		"length": "19",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "3",
+		"name": "Processing Code",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "EBCDIC",
+		"subfields": [
+			{
+				"name": "1",
+				"length": "2",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "2",
+				"length": "2",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "3",
+				"length": "2",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			}
+		]
+	},
+	{
+		"index": "4",
+		"name": "Amount, Transaction",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "5",
+		"name": "Amount, Settlement",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "6",
+		"name": "Amount, Cardholder Billing",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "7",
+		"name": "Transmission, Date and Time",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "8",
+		"name": "Amount, Cardholder Billing Fee",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "9",
+		"name": "Conversion Rate, Settlement",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "10",
+		"name": "Conversion Rate, Cardholder Billing",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "11",
+		"name": "System Trace Audit Number",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "12",
+		"name": "Time, Local Transaction",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "13",
+		"name": "Date, Local Transaction",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "14",
+		"name": "Date, Expiration",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "15",
+		"name": "Date, Settlement",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "16",
+		"name": "Date, Conversion",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "17",
+		"name": "Date, Capture",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "18",
+		"name": "Merchant Type",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "19",
+		"name": "Acquiring Institution Country Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "20",
+		"name": "Primary Account Number (PAN) Country Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "21",
+		"name": "Forwarding Institution Country Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "22",
+		"name": "Point-of-Service (POS) Entry Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC",
+		"subfields": [
+			{
+				"name": "1",
+				"length": "2",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "2",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			}
+		]
+	},
+	{
+		"index": "23",
+		"name": "Card Sequence Number",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "24",
+		"name": "Network International Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "25",
+		"name": "Point-of-Service (POS) Condition Code",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "26",
+		"name": "Point-of-Service (POS) Personal ID Number (PIN) Capture Code",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "27",
+		"name": "Authorization ID Response Length",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "28",
+		"name": "Amount, Transaction Fee",
+		"lengthIndicator" : "fixed",
+		"length": "9",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "29",
+		"name": "Amount, Settlement Fee",
+		"lengthIndicator" : "fixed",
+		"length": "9",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "30",
+		"name": "Amount, Transaction Processing Fee",
+		"lengthIndicator" : "fixed",
+		"length": "9",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "31",
+		"name": "Amount, Settlement Processing Fee",
+		"lengthIndicator" : "fixed",
+		"length": "9",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "32",
+		"name": "Acquiring Institution ID Code",
+		"lengthIndicator" : "LLvar",
+		"length": "6",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "33",
+		"name": "Forwarding Institution ID Code",
+		"lengthIndicator" : "LLvar",
+		"length": "6",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "34",
+		"name": "Primary Account Number (PAN), Extended",
+		"lengthIndicator" : "LLvar",
+		"length": "28",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "35",
+		"name": "Track 2 Data",
+		"lengthIndicator" : "LLvar",
+		"length": "37",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "36",
+		"name": "Track 3 Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "104",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "37",
+		"name": "Retrieval Reference Number",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "38",
+		"name": "Authorization ID Response",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "39",
+		"name": "Response Code",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "40",
+		"name": "Service Restriction Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "41",
+		"name": "Card Acceptor Terminal ID",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "42",
+		"name": "Card Acceptor ID Code",
+		"lengthIndicator" : "fixed",
+		"length": "15",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "43",
+		"name": "Card Acceptor Name/Location for All Transactions",
+		"lengthIndicator" : "fixed",
+		"length": "40",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "44",
+		"name": "Additional Response Data",
+		"lengthIndicator" : "LLvar",
+		"length": "25",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "45",
+		"name": "Track 1 Data",
+		"lengthIndicator" : "LLvar",
+		"length": "76",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "46",
+		"name": "Expanded Additional Amounts",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "47",
+		"name": "Additional Data�National Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "48",
+		"name": "Additional Data�Private Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "49",
+		"name": "Currency Code, Transaction",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "50",
+		"name": "Currency Code, Settlement",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "51",
+		"name": "Currency Code, Cardholder Billing",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "52",
+		"name": "Personal ID Number (PIN) Data",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "HEXA"
+	},
+	{
+		"index": "53",
+		"name": "Security-Related Control Information",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "54",
+		"name": "Additional Amounts",
+		"lengthIndicator" : "LLLvar",
+		"length": "120",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "55",
+		"name": "Integrated Circuit Card (ICC) System-Related Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "255",
+		"format": "ASCII",
+		"subfields": [
+			{
+				"name": "9F26",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F27",
+				"length": "1",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F10",
+				"length": "16",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F37",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F36",
+				"length": "1",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "95",
+				"length": "5",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9A",
+				"length": "3",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9C",
+				"length": "1",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F02",
+				"length": "3",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "5F2A",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "82",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F1A",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F34",
+				"length": "3",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F33",
+				"length": "3",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "84",
+				"length": "8",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F03",
+				"length": "3",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F35",
+				"length": "1",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F1E",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F41",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F53",
+				"length": "1",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F09",
+				"length": "1",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "91",
+				"length": "8",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "71",
+				"length": "127",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "72",
+				"length": "127",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "5F34",
+				"length": "1",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F6E",
+				"length": "7",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F21",
+				"length": "3",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			}
+		],
+		"subfieldsName": "TAG"
+	},
+	{
+		"index": "56",
+		"name": "Reserved for ISO Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII"
+	},
+	{
+		"index": "57",
+		"name": "Reserved for National Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII"
+	},
+	{
+		"index": "58",
+		"name": "Reserved for National Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII"
+	},
+	{
+		"index": "59",
+		"name": "Reserved for National Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII"
+	},
+	{
+		"index": "60",
+		"name": "Advice Reason Code",
+		"lengthIndicator" : "LLLvar",
+		"length": "60",
+		"format": "ASCII"
+	},
+	{
+		"index": "61",
+		"name": "Point-of-Service (POS) Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "26",
+		"format": "EBCDIC",
+		"subfields": [
+			{
+				"name": "POS Terminal Attendance",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "Reserved for Future Use",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "POS Terminal Location",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "POS Cardholder Presence",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "POS Card Presence",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "POS Card Capture Capabilities",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "POS Transaction Status",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "POS Transaction Security",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "Reserved for Future Use",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "Cardholder-Activated Terminal Level",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "POS Card Data Terminal Input Capability Indicator",
+				"length": "1",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "POS Authorization Life Cycle",
+				"length": "2",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "POS Country Code",
+				"length": "3",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "POS Postal Code",
+				"length": "10",
+				"lengthIndicator": "fixed",
+				"format": "EBCDIC"
+			}
+		]
+	},
+	{
+		"index": "62",
+		"name": "Intermediate Network Facility (INF) Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "100",
+		"format": "ASCII"
+	},
+	{
+		"index": "63",
+		"name": "Network Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "50",
+		"format": "ASCII"
+	},
+	{
+		"index": "64",
+		"name": "Message Authentication Code",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "HEXA"
+	},
+	{
+		"index": "65",
+		"name": "Bit Map, Extended",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "HEXA"
+	},
+	{
+		"index": "66",
+		"name": "Settlement Code",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "67",
+		"name": "Extended Payment Code",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "68",
+		"name": "Receiving Institution Country Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "69",
+		"name": "Settlement Institution Country Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "70",
+		"name": "Network Management Information Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "71",
+		"name": "Message Number",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "72",
+		"name": "Message Number Last",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "73",
+		"name": "Date Action",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "74",
+		"name": "Credits, Number",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "75",
+		"name": "Credits, Reversal Number",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "76",
+		"name": "Debits, Number",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "77",
+		"name": "Debits, Reversal Number",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "78",
+		"name": "Transfers Number",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "79",
+		"name": "Transfers Reversal Number",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "80",
+		"name": "Inquiries, Number",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "81",
+		"name": "Authorizations, Number",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "82",
+		"name": "Credits, Processing Fee Amount",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "83",
+		"name": "Credits, Transaction Fee Amount",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "84",
+		"name": "Debits, Processing Fee Amount",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "85",
+		"name": "Debits, Transaction Fee Amount",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "86",
+		"name": "Credits, Amount",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "87",
+		"name": "Credits, Reversal Amount",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "88",
+		"name": "Debits, Amount",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "89",
+		"name": "Debits, Reversal Amount",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "90",
+		"name": "Original Data Elements",
+		"lengthIndicator" : "fixed",
+		"length": "42",
+		"format": "EBCDIC",
+		"subfields":[
+			{
+				"name": "Original Message Type Identifier",
+				"lengthIndicator" : "fixed",
+				"length": "4",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "Original DE 11 (Systems Trace Audit Number)",
+				"lengthIndicator" : "fixed",
+				"length": "6",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "Original DE 7 (Transmission Date and Time)",
+				"lengthIndicator" : "fixed",
+				"length": "10",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "Original DE 32 (Acquiring Institution ID Code)",
+				"lengthIndicator" : "fixed",
+				"length": "11",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "Original DE 33 (Forwarding Institution ID Code)",
+				"lengthIndicator" : "fixed",
+				"length": "11",
+				"format": "EBCDIC"
+			}
+		]
+	},
+	{
+		"index": "91",
+		"name": "Issuer File Update Code",
+		"lengthIndicator" : "fixed",
+		"length": "1",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "92",
+		"name": "File Security Code",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "93",
+		"name": "Response Indicator",
+		"lengthIndicator" : "fixed",
+		"length": "5",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "94",
+		"name": "Service Indicator",
+		"lengthIndicator" : "fixed",
+		"length": "7",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "95",
+		"name": "Replacement Amounts",
+		"lengthIndicator" : "fixed",
+		"length": "42",
+		"format": "EBCDIC",
+		"subfields":[
+			{
+				"name": "Actual Amount, Transaction",
+				"lengthIndicator" : "fixed",
+				"length": "12",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "Actual Amount, Settlement",
+				"lengthIndicator" : "fixed",
+				"length": "12",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "Actual Amount, Cardholder Billing",
+				"lengthIndicator" : "fixed",
+				"length": "12",
+				"format": "EBCDIC"
+			},
+			{
+				"name": "Zero Fill",
+				"lengthIndicator" : "fixed",
+				"length": "6",
+				"format": "EBCDIC"
+			}
+		]
+	},
+	{
+		"index": "96",
+		"name": "Message Security Code",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "HEXA"
+	},
+	{
+		"index": "97",
+		"name": "Amount, Net Settlement",
+		"lengthIndicator" : "fixed",
+		"length": "17",
+		"format": "HEXA"
+	},
+	{
+		"index": "98",
+		"name": "Payee",
+		"lengthIndicator" : "fixed",
+		"length": "25",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "99",
+		"name": "Settlement Instituition ID Code",
+		"lengthIndicator" : "LLvar",
+		"length": "11",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "100",
+		"name": "Receiving Institution ID Code",
+		"lengthIndicator" : "LLvar",
+		"length": "11",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "101",
+		"name": "File Name",
+		"lengthIndicator" : "LLvar",
+		"length": "17",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "102",
+		"name": "Account ID 1",
+		"lengthIndicator" : "LLvar",
+		"length": "28",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "103",
+		"name": "Account ID 2",
+		"lengthIndicator" : "LLvar",
+		"length": "28",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "104",
+		"name": "Transaction Description",
+		"lengthIndicator" : "LLLvar",
+		"length": "100",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "105",
+		"name": "Reserved for Mastercard Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "106",
+		"name": "Reserved for Mastercard Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "107",
+		"name": "Reserved for Mastercard Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "108",
+		"name": "MoneySend Reference Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "109",
+		"name": "Reserved for ISO Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "110",
+		"name": "Reserved for ISO Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "111",
+		"name": "Reserved for ISO Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "112",
+		"name": "Additional Data (National Use)",
+		"lengthIndicator" : "LLLvar",
+		"length": "100",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "113",
+		"name": "Reserved for National Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "114",
+		"name": "Reserved for National Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "115",
+		"name": "Reserved for National Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "116",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "117",
+		"name": "Reserved for National Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "118",
+		"name": "Reserved for National Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "119",
+		"name": "Reserved for National Use",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "120",
+		"name": "Record Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "121",
+		"name": "Authorizing ID Code",
+		"lengthIndicator" : "LLLvar",
+		"length": "6",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "122",
+		"name": "Additional Record Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "123",
+		"name": "Receipt Free Text",
+		"lengthIndicator" : "LLLvar",
+		"length": "512",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "124",
+		"name": "Member-Defined Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "299",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "125",
+		"name": "New PIN Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "100",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "126",
+		"name": "Private Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "100",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "127",
+		"name": "Private Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "100",
+		"format": "EBCDIC"
+	},
+	{
+		"index": "128",
+		"name": "Message Authentication Code",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "EBCDIC"
+	}
+]

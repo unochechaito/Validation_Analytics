@@ -1,0 +1,135 @@
+[
+
+    {
+    "index": "0",
+    "name": "Header",
+    "lengthIndicator": "fixed",
+    "length": "24",
+    "format": "ASCII",
+    "subfields": [
+      {
+        "name": "FECHA-DE-CONCILIACION",
+        "lengthIndicator": "fixed",
+        "length": "6",
+        "format": "ASCII"
+      },
+      {
+        "name": "TIPO-DESC",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "SITE-ORIGEN",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "PERIODO",
+        "lengthIndicator": "fixed",
+        "length": "2",
+        "format": "ASCII"
+      },
+      {
+        "name": "SEQ",
+        "lengthIndicator": "fixed",
+        "length": "7",
+        "format": "ASCII"
+      },
+      {
+        "name": "ID-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "3",
+        "format": "ASCII"
+      },
+      {
+        "name": "LONGITUD-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "4",
+        "format": "ASCII"
+      }
+    ]
+  },
+
+    {
+		"index": "1",
+		"name": "PROC-CODE",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "2",
+		"name": "ID-MESSAGE",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "3",
+		"name": "DATE",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "4",
+		"name": "CANAL",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "5",
+		"name": "TRACK2DATA",
+		"lengthIndicator" : "fixed",
+		"length": "37",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "6",
+		"name": "RRN",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "7",
+		"name": "AUTH-CODE",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "8",
+		"name": "RESP-CODE",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "9",
+		"name": "MERCHANT",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "10",
+		"name": "FILLER",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "ASCII"
+	}
+
+]

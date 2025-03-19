@@ -1,0 +1,76 @@
+[
+	{
+		"name": "MTI",
+		"index": "MTI",
+		"values": {
+			"0100": "Preautorizacion",
+			"0200": "Autorizacion",
+			"0220": "Notificacion",
+			"0320": "Detalle de lote",
+			"0400": "Reverso",
+			"0420": "Reverso",
+			"0421": "Reverso Repeticion",
+			"0500": "Inicio/Fin Lote",
+			"0642": "Administrativo",
+			"0800": "Network Management Request",
+			"9420": "Reject Reverso",
+			"9200": "Reject Autorizacion"
+		}
+	},
+	{
+		"name": "Processing Code",
+		"index": "3.1",
+		"values": {
+			"00": "Compra",
+			"16": "Consulta de puntos",
+			"17": "Dinero Movil",
+			"18": "Compra con puntos",
+			"06": "Checkout",
+			"07": "Ajuste de propina",
+			"08": "Checkin",
+			"09": "Cash",
+			"20": "Devolucion",
+			"31": "Consulta de Saldo",
+			"42": "Retiro efectivo sin tarjeta QR",
+			"65": "Venta de tiempo aire",
+			"68": "Checkin DCC",
+			"66": "Checkout DCC",
+			"85": "Cierre de Ticket",
+			"28": "Pago de tarjeta",
+			"92": "Solicitud cierre de Lote",
+			"96": "Aviso fin de Lote",
+			"60": "Compra DCC"
+		}
+	},
+	{
+		"name": "POS Entry Mode",
+		"index": "22.1",
+		"values": {
+			"00": "Entrada desconocido",
+			"01": "Entrada manual",
+			"03": "Lectura QR",
+			"05": "Lectura de tarjeta Chip Contacto",
+			"07": "Lectura de tarjeta Chip sin Contacto",
+			"10": "Credential on File",
+			"80": "Lectura de tarjeta banda (Fallback)",
+			"90": "Lectura de tarjeta banda",
+			"91": "PAN auto-entry via contactless magnetic stripe"
+		}
+	},
+	{
+		"name": "Inicializacion de llaves",
+		"index": "63.EW",
+		"onlyPresent": true
+	},
+	{
+		"name": "Network Management Information Code",
+		"index": "70",
+		"values": {
+			"001": "Sign On",
+			"002": "Sign Off",
+			"162": "Key Exchange",
+			"201": "Cutoff",
+			"301": "Echo Test"
+		}
+	}
+]

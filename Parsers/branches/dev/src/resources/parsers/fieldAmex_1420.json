@@ -1,0 +1,287 @@
+[
+  {
+    "index": "0",
+    "name": "Header",
+    "lengthIndicator": "fixed",
+    "length": "12",
+    "format": "EBCDIC",
+    "subfields": [
+      {
+        "name": "MTI",
+        "lengthIndicator": "fixed",
+        "length": "4",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Bitmap",
+        "lengthIndicator": "fixed",
+        "length": "8",
+        "format": "Binary"
+      }
+    ]
+  },
+  {
+    "index": "1",
+    "name": "Bitmap2",
+    "lengthIndicator": "fixed",
+    "length": "8",
+    "format": "Binary"
+  },
+  {
+    "index": "2",
+    "name": "Primary Account Number",
+    "lengthIndicator": "LLvar",
+    "length": "21",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "3",
+    "name": "Processing Code",
+    "lengthIndicator": "fixed",
+    "length": "6",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "4",
+    "name": "Amount, Transaction",
+    "lengthIndicator": "fixed",
+    "length": "12",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "7",
+    "name": "Date And Time, Transmission",
+    "lengthIndicator" : "fixed",
+    "length": "10",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "11",
+    "name": "System Trace Audit Number",
+    "lengthIndicator": "fixed",
+    "length": "6",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "12",
+    "name": "Date And Time, Local Transaction",
+    "lengthIndicator": "fixed",
+    "length": "12",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "14",
+    "name": "Date, Expiration",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "19",
+    "name": "Country Code, Acquiring Institution",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "22",
+    "name": "Point-of-Service Data Code",
+    "lengthIndicator": "fixed",
+    "length": "12",
+    "format": "EBCDIC",
+    "subfields": [
+      {
+        "name": "1",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "2",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "3",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "4",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "5",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "6",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "7",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "8",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "9",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "10",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "11",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "12",
+        "length": "1",
+        "lengthIndicator": "fixed",
+        "format": "EBCDIC"
+      }
+    ]
+  },
+  {
+    "index": "24",
+    "name": "Function Code",
+    "lengthIndicator" : "fixed",
+    "length": "3",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "25",
+    "name": "Message Reason Code",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "26",
+    "name": "Card Acceptor Business Code",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "28",
+    "name": "Date, Reconciliation",
+    "lengthIndicator": "fixed",
+    "length": "6",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "31",
+    "name": "Acquirer Reference Data",
+    "lengthIndicator": "LLvar",
+    "length": "50",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "32",
+    "name": "Acquiring Institution ID Code",
+    "lengthIndicator": "LLvar",
+    "length": "13",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "33",
+    "name": "Forwarding Institution ID Code",
+    "lengthIndicator": "LLvar",
+    "length": "13",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "37",
+    "name": "Retrieval Reference Number",
+    "lengthIndicator": "fixed",
+    "length": "12",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "39",
+    "name": "Action Code",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "41",
+    "name": "Card Acceptor Terminal ID",
+    "lengthIndicator": "fixed",
+    "length": "8",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "42",
+    "name": "Card Acceptor ID Code",
+    "lengthIndicator": "fixed",
+    "length": "15",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "49",
+    "name": "Currency Code, Transaction",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "EBCDIC"
+  },
+  {
+    "index": "56",
+    "name": "Original Data Elements",
+    "lengthIndicator": "LLvar",
+    "length": "37",
+    "format": "EBCDIC",
+    "subfields": [
+      {
+        "name": "Message Type ID",
+        "lengthIndicator": "fixed",
+        "length": "4",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "System Trace Audit Number",
+        "lengthIndicator": "fixed",
+        "length": "6",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Date and Time, Local Transaction",
+        "lengthIndicator": "fixed",
+        "length": "12",
+        "format": "EBCDIC"
+      },
+      {
+        "name": "Acquiring Institution Identification Code",
+        "lengthIndicator": "LLvar",
+        "length": "13",
+        "format": "EBCDIC"
+      }
+    ]
+  }
+]
+
+
+

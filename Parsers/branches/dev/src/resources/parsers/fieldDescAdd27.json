@@ -1,0 +1,118 @@
+[
+{
+    "index": "0",
+    "name": "Header",
+    "lengthIndicator": "fixed",
+    "length": "24",
+    "format": "ASCII",
+    "subfields": [
+      {
+        "name": "FECHA-DE-CONCILIACION",
+        "lengthIndicator": "fixed",
+        "length": "6",
+        "format": "ASCII"
+      },
+      {
+        "name": "TIPO-DESC",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "SITE-ORIGEN",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "PERIODO",
+        "lengthIndicator": "fixed",
+        "length": "2",
+        "format": "ASCII"
+      },
+      {
+        "name": "SEQ",
+        "lengthIndicator": "fixed",
+        "length": "7",
+        "format": "ASCII"
+      },
+      {
+        "name": "ID-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "3",
+        "format": "ASCII"
+      },
+      {
+        "name": "LONGITUD-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "4",
+        "format": "ASCII"
+      }
+    ]
+  },
+
+    {
+		"index": "1",
+		"name": "LOTE",
+		"lengthIndicator" : "fixed",
+		"length": "26",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "2",
+		"name": "REFERENCIA",
+		"lengthIndicator" : "fixed",
+		"length": "50",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "3",
+		"name": "CODIGO-FIJO",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "4",
+		"name": "REF-CTE-1",
+		"lengthIndicator" : "fixed",
+		"length": "30",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "5",
+		"name": "REF-CTE-2",
+		"lengthIndicator" : "fixed",
+		"length": "30",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "6",
+		"name": "REF-CTE-3",
+		"lengthIndicator" : "fixed",
+		"length": "30",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "7",
+		"name": "DIRECCION-IP",
+		"lengthIndicator" : "fixed",
+		"length": "15",
+		"format": "ASCII"
+	},
+
+    {
+		"index": "8",
+		"name": "FILLER",
+		"lengthIndicator" : "fixed",
+		"length": "15",
+		"format": "ASCII"
+	}
+
+]

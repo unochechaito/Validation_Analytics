@@ -1,0 +1,137 @@
+[
+    {
+        "index": "0",
+        "name": "Header",
+        "lengthIndicator": "fixed",
+        "length": "24",
+        "format": "ASCII",
+        "subfields": [
+          {
+            "name": "FECHA-DE-CONCILIACION",
+            "lengthIndicator": "fixed",
+            "length": "6",
+            "format": "ASCII"
+          },
+          {
+            "name": "TIPO-DESC",
+            "lengthIndicator": "fixed",
+            "length": "1",
+            "format": "ASCII"
+          },
+          {
+            "name": "SITE-ORIGEN",
+            "lengthIndicator": "fixed",
+            "length": "1",
+            "format": "ASCII"
+          },
+          {
+            "name": "PERIODO",
+            "lengthIndicator": "fixed",
+            "length": "2",
+            "format": "ASCII"
+          },
+          {
+            "name": "SEQ",
+            "lengthIndicator": "fixed",
+            "length": "7",
+            "format": "ASCII"
+          },
+          {
+            "name": "ID-REGISTRO",
+            "lengthIndicator": "fixed",
+            "length": "3",
+            "format": "ASCII"
+          },
+          {
+            "name": "LONGITUD-REGISTRO",
+            "lengthIndicator": "fixed",
+            "length": "4",
+            "format": "ASCII"
+          }
+        ]
+      },
+    {
+        "index": 1,
+        "name": "DPAN",
+        "lengthIndicator": "fixed",
+        "length": 19,
+        "format": "ASCII"
+    },
+    {
+        "index": 2,
+        "name": "PEM-ORIG",
+        "lengthIndicator": "fixed",
+        "length": 3,
+        "format": "ASCII"
+    },
+    {
+        "index": 3,
+        "name": "ADQ-MC",
+        "lengthIndicator": "fixed",
+        "length": 11,
+        "format": "ASCII"
+    },
+    {
+        "index": 4,
+        "name": "FLAG-ARQC-REQ",
+        "lengthIndicator": "fixed",
+        "length": 1,
+        "format": "ASCII"
+    },
+    {
+        "index": 5,
+        "name": "FLAG-CVC3-REQ",
+        "lengthIndicator": "fixed",
+        "length": 1,
+        "format": "ASCII"
+    },
+    {
+        "index": 6,
+        "name": "TIPO-OBS",
+        "lengthIndicator": "fixed",
+        "length": 2,
+        "format": "ASCII"
+    },
+    {
+        "index": 7,
+        "name": "FLAG-MAPEO",
+        "lengthIndicator": "fixed",
+        "length": 1,
+        "format": "ASCII"
+    },
+    {
+        "index": 8,
+        "name": "IND-NUM-CTA",
+        "lengthIndicator": "fixed",
+        "length": 1,
+        "format": "ASCII"
+    },
+    {
+        "index": 9,
+        "name": "TKN-REQ-ID",
+        "lengthIndicator": "fixed",
+        "length": 11,
+        "format": "ASCII"
+    },
+    {
+        "index": 10,
+        "name": "WALLET-ID",
+        "lengthIndicator": "fixed",
+        "length": 3,
+        "format": "ASCII"
+    },
+    {
+        "index": 11,
+        "name": "TKN-STO-TYPE",
+        "lengthIndicator": "fixed",
+        "length": 2,
+        "format": "ASCII"
+    },
+    {
+        "index": 12,
+        "name": "TKN-ASS-LVL",
+        "lengthIndicator": "fixed",
+        "length": 2,
+        "format": "ASCII"
+    }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "index": 1,
+    "name": "Message Type Identifier",
+    "lengthIndicator": "fixed",
+    "length": 4,
+    "format": "ASCII"
+  },
+  {
+    "index": 2,
+    "name": "Processing Code",
+    "lengthIndicator": "fixed",
+    "length": 6,
+    "format": "ASCII"
+  },
+  {
+    "index": 3,
+    "name": "Date And Time Transmission",
+    "lengthIndicator": "fixed",
+    "length": 10,
+    "format": "ASCII"
+  },
+  {
+    "index": 4,
+    "name": "System Trace Audit Number",
+    "lengthIndicator": "fixed",
+    "length": 6,
+    "format": "ASCII"
+  },
+  {
+    "index": 5,
+    "name": "Date and Time Local Transaction",
+    "lengthIndicator": "fixed",
+    "length": 12,
+    "format": "ASCII"
+  },
+  {
+    "index": 6,
+    "name": "Point Of Service Data Code",
+    "lengthIndicator": "fixed",
+    "length": 12,
+    "format": "ASCII"
+  },
+  {
+    "index": 7,
+    "name": "Card Acceptor Bussiness Code",
+    "lengthIndicator": "fixed",
+    "length": 4,
+    "format": "ASCII"
+  },
+  {
+    "index": 8,
+    "name": "Approval Code Length",
+    "lengthIndicator": "fixed",
+    "length": 1,
+    "format": "ASCII"
+  },
+  {
+    "index": 9,
+    "name": "Acquirer Reference Data",
+    "lengthIndicator": "fixed",
+    "length": 15,
+    "format": "ASCII"
+  },
+  {
+    "index": 10,
+    "name": "Acquiring Institution Identification Code",
+    "lengthIndicator": "fixed",
+    "length": 1,
+    "format": "ASCII"
+  },
+  {
+    "index": 11,
+    "name": "Retrieval Reference Number",
+    "lengthIndicator": "fixed",
+    "length": 12,
+    "format": "ASCII"
+  },
+  {
+    "index": 12,
+    "name": "Action Code",
+    "lengthIndicator": "fixed",
+    "length": 3,
+    "format": "ASCII"
+  },
+  {
+    "index": 13,
+    "name": "Card Acceptor Identification Code",
+    "lengthIndicator": "fixed",
+    "length": 10,
+    "format": "ASCII"
+  },
+  {
+    "index": 14,
+    "name": "Additional Data",
+    "lengthIndicator": "fixed",
+    "length": 4,
+    "format": "ASCII"
+  },
+  {
+    "index": 15,
+    "name": "Original Data Elements",
+    "lengthIndicator": "fixed",
+    "length": 25,
+    "format": "ASCII"
+  },
+  {
+    "index": 16,
+    "name": "Seller ID",
+    "lengthIndicator": "fixed",
+    "length": 20,
+    "format": "ASCII"
+  },
+  {
+    "index": 17,
+    "name": "Filler",
+    "lengthIndicator": "fixed",
+    "length": 13,
+    "format": "ASCII"
+  },
+  {
+    "index": 18,
+    "name": "Filler",
+    "lengthIndicator": "fixed",
+    "length": 1,
+    "format": "ASCII"
+  },
+  {
+    "index": 19,
+    "name": "Filler",
+    "lengthIndicator": "fixed",
+    "length": 1,
+    "format": "ASCII"
+  },
+  {
+    "index": 20,
+    "name": "Acquirer Reference Data Tracking",
+    "lengthIndicator": "fixed",
+    "length": 15,
+    "format": "ASCII"
+  },
+  {
+    "index": 21,
+    "name": "Filler",
+    "lengthIndicator": "fixed",
+    "length": 1,
+    "format": "ASCII"
+  }
+]

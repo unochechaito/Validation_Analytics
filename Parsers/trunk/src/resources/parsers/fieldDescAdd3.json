@@ -1,0 +1,459 @@
+[
+  {
+    "index": "0",
+    "name": "Header",
+    "lengthIndicator": "fixed",
+    "length": "24",
+    "format": "ASCII",
+    "subfields": [
+      {
+        "name": "FECHA-DE-CONCILIACION",
+        "lengthIndicator": "fixed",
+        "length": "6",
+        "format": "ASCII"
+      },
+      {
+        "name": "TIPO-DESC",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "SITE-ORIGEN",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "PERIODO",
+        "lengthIndicator": "fixed",
+        "length": "2",
+        "format": "ASCII"
+      },
+      {
+        "name": "SEQ",
+        "lengthIndicator": "fixed",
+        "length": "7",
+        "format": "ASCII"
+      },
+      {
+        "name": "ID-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "3",
+        "format": "ASCII"
+      },
+      {
+        "name": "LONGITUD-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "4",
+        "format": "ASCII"
+      }
+    ]
+  },
+  {
+    "index": "1",
+    "name": "Flag - Crypto Info Data",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "2",
+    "name": "Crypto Info Data",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "3",
+    "name": "Flag - TVR",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "4",
+    "name": "TVR",
+    "lengthIndicator": "fixed",
+    "length": "10",
+    "format": "ASCII"
+  },
+  {
+    "index": "5",
+    "name": "Flag - ARQC",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "6",
+    "name": "Application Cryptogram  (ARQC TC)",
+    "lengthIndicator": "fixed",
+    "length": "16",
+    "format": "ASCII"
+  },
+  {
+    "index": "7",
+    "name": "Flag - Amount Authorized",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "8",
+    "name": "Amount Authorized",
+    "lengthIndicator": "fixed",
+    "length": "12",
+    "format": "ASCII"
+  },
+  {
+    "index": "9",
+    "name": "Flag - Amount Other",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "10",
+    "name": "Amount Other",
+    "lengthIndicator": "fixed",
+    "length": "12",
+    "format": "ASCII"
+  },
+  {
+    "index": "11",
+    "name": "Flag - Application Interchange Profile (AIP)",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "12",
+    "name": "Application Interchange Profile (AIP)",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "13",
+    "name": "Flag - Application Transaction Counter (ATC)",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "14",
+    "name": "Application Transaction Counter (ATC)",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "15",
+    "name": "Flag - Terminal Country Code",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "16",
+    "name": "Terminal Country Code",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "17",
+    "name": "Flag - Transaction Currency Code",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "18",
+    "name": "Transaction Currency Code",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "19",
+    "name": "Flag - Tran Date",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "20",
+    "name": "Tran Date",
+    "lengthIndicator": "fixed",
+    "length": "6",
+    "format": "ASCII"
+  },
+  {
+    "index": "21",
+    "name": "Flag - Tran Type",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "22",
+    "name": "Tran Type",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "23",
+    "name": "Flag - Unpredictable Number",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "24",
+    "name": "Unpredictable Number",
+    "lengthIndicator": "fixed",
+    "length": "8",
+    "format": "ASCII"
+  },
+  {
+    "index": "25",
+    "name": "Flag - Issuer Application Data",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "26",
+    "name": "Issuer Application Data Len",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "27",
+    "name": "Issuer Application Data",
+    "lengthIndicator": "fixed",
+    "length": "64",
+    "format": "ASCII"
+  },
+  {
+    "index": "28",
+    "name": "Flag - Terminal Serial Number",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "29",
+    "name": "Terminal serial Number",
+    "lengthIndicator": "fixed",
+    "length": "8",
+    "format": "ASCII"
+  },
+  {
+    "index": "30",
+    "name": "Flag - EMV Terminal Capability",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "31",
+    "name": "EMV Terminal Capability",
+    "lengthIndicator": "fixed",
+    "length": "6",
+    "format": "ASCII"
+  },
+  {
+    "index": "32",
+    "name": "Flag - EMV Terminal Type",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "33",
+    "name": "EMV Terminal Type",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "34",
+    "name": "Flag - Appl Version Number",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "35",
+    "name": "Appl Version Number",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "36",
+    "name": "Flag - CVM Results",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "37",
+    "name": "CVM Results",
+    "lengthIndicator": "fixed",
+    "length": "6",
+    "format": "ASCII"
+  },
+  {
+    "index": "38",
+    "name": "Flag - Dedicated File Name",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "39",
+    "name": "Dedicated File Name Len",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "40",
+    "name": "Dedicated File Name",
+    "lengthIndicator": "fixed",
+    "length": "32",
+    "format": "ASCII"
+  },
+  {
+    "index": "41",
+    "name": "Flag - Appl PAN Seq Number",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "42",
+    "name": "Application PAN Seq Number",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "43",
+    "name": "Flag - Issuer Authentication Data",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "44",
+    "name": "Issuer Authentication Data LEN",
+    "lengthIndicator": "fixed",
+    "length": "2",
+    "format": "ASCII"
+  },
+  {
+    "index": "45",
+    "name": "ARPC",
+    "lengthIndicator": "fixed",
+    "length": "16",
+    "format": "ASCII"
+  },
+  {
+    "index": "46",
+    "name": "ARPC Resp Code",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "47",
+    "name": "Dependiente del Emisor",
+    "lengthIndicator": "fixed",
+    "length": "12",
+    "format": "ASCII"
+  },
+  {
+    "index": "48",
+    "name": "Flag - Token B4",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "49",
+    "name": "PT SRV Entry Mode",
+    "lengthIndicator": "fixed",
+    "length": "3",
+    "format": "ASCII"
+  },
+  {
+    "index": "50",
+    "name": "Terminal Entry Capability",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "51",
+    "name": "Last EMV Status",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "52",
+    "name": "Data Suspect",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "53",
+    "name": "Device Info",
+    "lengthIndicator": "fixed",
+    "length": "6",
+    "format": "ASCII"
+  },
+  {
+    "index": "54",
+    "name": "Reason Online Code",
+    "lengthIndicator": "fixed",
+    "length": "4",
+    "format": "ASCII"
+  },
+  {
+    "index": "55",
+    "name": "ISO Response Code Indicator",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "56",
+    "name": "Flag- Token B5",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "57",
+    "name": "Send Card Block",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  },
+  {
+    "index": "58",
+    "name": "Send Put Data",
+    "lengthIndicator": "fixed",
+    "length": "1",
+    "format": "ASCII"
+  }
+]

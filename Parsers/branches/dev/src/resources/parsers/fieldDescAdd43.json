@@ -1,0 +1,180 @@
+[
+
+    {
+    "index": "0",
+    "name": "Header",
+    "lengthIndicator": "fixed",
+    "length": "24",
+    "format": "ASCII",
+    "subfields": [
+      {
+        "name": "FECHA-DE-CONCILIACION",
+        "lengthIndicator": "fixed",
+        "length": "6",
+        "format": "ASCII"
+      },
+      {
+        "name": "TIPO-DESC",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "SITE-ORIGEN",
+        "lengthIndicator": "fixed",
+        "length": "1",
+        "format": "ASCII"
+      },
+      {
+        "name": "PERIODO",
+        "lengthIndicator": "fixed",
+        "length": "2",
+        "format": "ASCII"
+      },
+      {
+        "name": "SEQ",
+        "lengthIndicator": "fixed",
+        "length": "7",
+        "format": "ASCII"
+      },
+      {
+        "name": "ID-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "3",
+        "format": "ASCII"
+      },
+      {
+        "name": "LONGITUD-REGISTRO",
+        "lengthIndicator": "fixed",
+        "length": "4",
+        "format": "ASCII"
+      }
+    ]
+  },
+	
+	{
+		"index": "1",
+		"name": "CERT-CO2-1",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+
+	{
+		"index": "2",
+		"name": "BONO-CO2-1",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	
+	{
+		"index": "3",
+		"name": "COST-CO2-1",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	
+	{
+		"index": "4",
+		"name": "FACT-PROY-1",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	
+	{
+		"index": "5",
+		"name": "FACT-MEXICO-1",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},	
+	
+	{
+		"index": "6",
+		"name": "CERT-CO2-2",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	
+	{
+		"index": "7",
+		"name": "BONO-CO2-2",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+
+	{
+		"index": "8",
+		"name": "COST-CO2-2",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},			
+	
+	{
+		"index": "9",
+		"name": "FACT-PROY-2",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	
+	{
+		"index": "10",
+		"name": "FACT-MEXICO-2",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},	
+	
+	{
+		"index": "11",
+		"name": "CERT-CO2-3",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	
+	{
+		"index": "12",
+		"name": "BONO-CO2-3",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+
+	{
+		"index": "13",
+		"name": "COST-CO2-3",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},			
+	
+	{
+		"index": "14",
+		"name": "FACT-PROY-3",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	
+	{
+		"index": "15",
+		"name": "FACT-MEXICO-3",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	}	
+
+
+
+
+
+
+]

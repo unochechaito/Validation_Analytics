@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE isopackager PUBLIC "-//jPOS/jPOS Generic Packager DTD 1.0//EN" "http://jpos.org/dtd/generic-packager-1.0.dtd">
+<isopackager emitBitmap="false" >
+    <isofield id="1" length="4" name="Tipo de mensaje" class="org.jpos.iso.IFA_NUMERIC" />
+    <isofield id="2" length="8" name="Secuencia" class="org.jpos.iso.IFA_NUMERIC" />
+    <isofield id="3" length="8" name="Fecha" class="org.jpos.iso.IFA_NUMERIC" />
+    <isofield id="4" length="3" name="EG_TrackData" class="org.jpos.iso.IF_CHAR" />
+    <isofield id="5" length="2" name="EG_responseCode" class="org.jpos.iso.IF_CHAR" />
+</isopackager>

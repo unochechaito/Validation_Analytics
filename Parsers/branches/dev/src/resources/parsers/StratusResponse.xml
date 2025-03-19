@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE isopackager PUBLIC
+	"-//jPOS/jPOS Generic Packager DTD 1.0//EN"
+	"http://jpos.org/dtd/generic-packager-1.0.dtd">
+<isopackager emitBitmap="false" >
+	<isofield id="1" length="4" name="Tipo de mensaje" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="2" length="8" name="Secuencia" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="3" length="8" name="Fecha" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="4" length="40" name="EG_TrackData" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="5" length="4" name="EG_tranCodeON2" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="6" length="4" name="EG_errorON2" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="7" length="5" name="EG_despAcqID" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="8" length="4" name="EG_fiAcq" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="9" length="12" name="EG_rrnAcq" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="10" length="6" name="EG_stanAcq" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="11" length="4" name="EG_ABATarjeta" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="12" length="8" name="EG_merchandID" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="13" length="1" name="EG_ventanaCorte" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="14" length="12" name="EG_rrnIss" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="15" length="6" name="EG_stanIss" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="16" length="12" name="EG_amount" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="17" length="1" name="eg_force_post_ind" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="18" length="4" name="eg_tranType" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="19" length="10" name="eg_tranDateTime" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="20" length="4" name="eg_captureDate" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="21" length="10" name="eg_gmtDateTime" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="22" length="6" name="eg_procCode" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="23" length="4" name="eg_merchType" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="24" length="3" name="eg_posEntryMode" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="25" length="3" name="eg_origEntryMode" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="26" length="2" name="eg_responseCode" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="27" length="6" name="eg_autorizationCode" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="28" length="4" name="eg_businessDate" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="29" length="16" name="eg_acceptorId" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="30" length="40" name="eg_acceptorData" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="31" length="3" name="eg_currencyCode" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="32" length="11" name="EG_acquirer" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="33" length="1" name="eg_chipInfoFlag" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="34" length="16" name="eg_terminal" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="35" length="19" name="eg_issAcquirerData" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="36" length="10" name="eg_postalCode" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="37" length="2" name="eg_posCoditionCode" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="38" length="27" name="eg_cardAcceptor" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="39" length="15" name="eg_jiffyPop" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofield id="40" length="28" name="eg_entryDateTime" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="41" length="12" name="eg_additionalAmount" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="42" length="2" name="eg_platform" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="43" length="1" name="eg_termType" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="44" length="3" name="eg_serviceId" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="45" length="1" name="eg_cardServCode" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="46" length="1" name="eg_flagResponder" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="47" length="2" name="eg_merchAcquirer" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="48" length="1" name="eg_cavvResult" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="49" length="1" name="eg_ucafResult" class="org.jpos.iso.IF_CHAR" />
+	<isofield id="50" length="1" name="eg_testMerchant" class="org.jpos.iso.IFA_NUMERIC" />
+	<isofieldpackager 
+		id="54" 
+		name="Datos EMV FULL" 
+		length="9999"
+		emitBitmap="false"
+		class="org.jpos.iso.IFAPresenceLLLL" 
+		packager="org.jpos.iso.packager.GenericSubFieldPackager">
+		<isofield id="1" length="38" name="Token B5" class="org.jpos.iso.IFAPresenceLLL" />
+		<isofield id="2" length="260" name="Token B6" class="org.jpos.iso.IFAPresenceLLL" />
+		<isofield id="3" length="20" name="Token B4" class="org.jpos.iso.IFAPresenceLLL" />
+	</isofieldpackager>
+	<isofieldpackager 
+		id="55" 
+		name="Datos Lealtad" 
+		length="9999"
+		emitBitmap="false"
+		class="org.jpos.iso.IFAPresenceLLLL" 
+		packager="org.jpos.iso.packager.GenericSubFieldPackager">
+		<isofield id="1" length="12" name="importe en pesos" class="org.jpos.iso.IFA_NUMERIC" />
+		<isofield id="2" length="10" name="Numero de puntos" class="org.jpos.iso.IFA_NUMERIC" />
+		<isofield id="3" length="2" name="Factor de exponenciacion" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="4" length="12" name="Saldo disponible en pesos" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="5" length="10" name="Saldo anterior en puntos" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="6" length="12" name="Saldo anterior en pesos" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="7" length="6" name="Vigencia promocione exp" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="8" length="12" name="Saldo redimido exp en pesos" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="9" length="10" name="Saldo redimido exp en puntos" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="10" length="12" name="Saldo disponible exp en pesos" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="11" length="10" name="Saldo disponible exp en puntos" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="12" length="2" name="Card Request" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="13" length="1" name="Pool-number" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="14" length="1" name="Ecoup-number" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="15" length="1" name="Segment-number" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="16" length="10" name="Pool ID 1" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="17" length="2" name="Pool Adjust Type 1" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="18" length="10" name="Pool Value 1" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="19" length="3" name="Pool Unit Label 1" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="20" length="1" name="Pool Decib Nb 1" class="org.jpos.iso.IF_CHAR"/>
+		<isofield id="21" length="10" name="Cryptogram MAC" class="org.jpos.iso.IF_CHAR"/>
+	</isofieldpackager>
+	<isofieldpackager 
+		id="56" 
+		name="Datos C63" 
+		length="9999"
+		emitBitmap="false"
+		class="org.jpos.iso.IFAPresenceLLLL" 
+		packager="org.jpos.iso.packager.GenericSubFieldPackager">
+		<isofield id="1" length="2" name="TkQ1" class="org.jpos.iso.IFAPresenceLLL"/>
+		<isofield id="2" length="2" name="TkQ2" class="org.jpos.iso.IFAPresenceLLL"/>
+		<isofield id="3" length="6" name="TkQ6" class="org.jpos.iso.IFAPresenceLLL"/>
+		<isofield id="4" length="26" name="TkC0" class="org.jpos.iso.IFAPresenceLLL"/>
+		<isofield id="5" length="20" name="Tk04" class="org.jpos.iso.IFAPresenceLLL"/>
+		<isofield id="6" length="12" name="TkC4" class="org.jpos.iso.IFAPresenceLLL"/>
+		<isofield id="7" length="90" name="TkC5" class="org.jpos.iso.IFAPresenceLLL"/>
+		<isofield id="8" length="16" name="TkR1" class="org.jpos.iso.IFAPresenceLLL"/>
+		<isofield id="9" length="2" name="TkER" class="org.jpos.iso.IFAPresenceLLL"/>
+		<isofield id="10" length="366" name="TkET" class="org.jpos.iso.IFAPresenceLLL"/>
+		<isofield id="11" length="68" name="TkEx" class="org.jpos.iso.IFAPresenceLLL"/>
+	</isofieldpackager>
+	<isofield id="57" length="9999" name="Datos C90" class="org.jpos.iso.IFAPresenceLLLL" />
+	<isofield id="58" length="9999" name="Datos C103" class="org.jpos.iso.IFAPresenceLLLL" />
+	<isofieldpackager 
+		id="59" 
+		name="Datos C56" 
+		length="16"
+		emitBitmap="false"
+		class="org.jpos.iso.IFAPresenceLLLL" 
+		packager="org.jpos.iso.packager.GenericSubFieldPackager">
+		<isofield id="1" length="13" name="BCO_EMI" class="org.jpos.iso.IFAPresenceLL"/>
+		<isofield id="2" length="10" name="NOMBRE_CORTO" class="org.jpos.iso.IFAPresenceLL"/>
+		<isofield id="3" length="12" name="FECHA_MAX" class="org.jpos.iso.IFAPresenceLL"/>
+		<isofield id="4" length="1" name="NAT" class="org.jpos.iso.IFAPresenceLL"/>
+		<isofield id="5" length="2" name="INSTELEC" class="org.jpos.iso.IFAPresenceLL"/>
+		<isofield id="6" length="9" name="FOLIOTELEC" class="org.jpos.iso.IFAPresenceLL"/>
+		<isofield id="7" length="1" name="PRODUCTO" class="org.jpos.iso.IFAPresenceLL"/>
+		<isofield id="8" length="40" name="LEYENDA" class="org.jpos.iso.IFAPresenceLL"/>
+	</isofieldpackager>
+	<isofieldpackager 
+		id="60" 
+		name="Datos BX_DATA" 
+		length="9999" 
+		class="org.jpos.iso.IFAPresenceLLLL" 
+		packager="org.jpos.iso.packager.GenericSubFieldPackager">
+		<isofield id="1" length="4" name="BX_MSG_ID" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="2" length="6" name="BX_PROC_CODE" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="3" length="4" name="BX_FECHA" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="4" length="6" name="BX_AUTH_CODE" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="5" length="2" name="BX_RESP_CODE" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="6" length="12" name="BX_ADDL_AMT" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="7" length="4" name="BX_61_MSG_ID" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="8" length="6" name="BX_61_STAN" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="9" length="16" name="BX_61_ARQC" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="10" length="8" name="BX_FOLIO" class="org.jpos.iso.IF_CHAR" />
+	</isofieldpackager>
+	<isofield id="61" length="9999" name="Datos de campanas" class="org.jpos.iso.IFAPresenceLLLL" />
+	<isofieldpackager 
+		id="62" 
+		name="Datos de amex"
+		length="9999"
+		emitBitmap="false"
+		class="org.jpos.iso.IFAPresenceLLL"
+		packager="org.jpos.iso.packager.GenericSubFieldPackager">
+		<isofield id="1" length="10" name="R_EG_TRANSM_DATE" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="2" length="6" name="R_EG_STAN_EVO" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="3" length="12" name="R_EG_LOCAL_TRANS_TIME" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="4" length="12" name="R_EG_POSCDATA_C22_EVO" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="5" length="15" name="R_EG_ACQ_REF_DATA_EVO" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="6" length="3" name="R_EG_ACTION_CODE_EVO" class="org.jpos.iso.IF_CHAR" />
+		<isofield id="7" length="15" name="R_EG_CARD_ACCEPTOR" class="org.jpos.iso.IF_CHAR" />
+	</isofieldpackager>
+</isopackager>

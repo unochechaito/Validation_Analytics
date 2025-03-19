@@ -1,0 +1,1100 @@
+[
+	{
+		"index": "0",
+		"name": "Header",
+		"lengthIndicator" : "fixed",
+		"length": "32",
+		"format": "ASCII",
+		"subfields":[
+			{
+				"name": "H1",
+				"lengthIndicator" : "fixed",
+				"length": "12",
+				"format": "ASCII"
+			},
+			
+			{
+				"name": "MTI",
+				"lengthIndicator" : "fixed",
+				"length": "4",
+				"format": "ASCII"
+			},
+			{
+				"name": "Bitmap",
+				"lengthIndicator" : "fixed",
+				"length": "16",
+				"format": "ASCII"
+			}
+		]
+	},
+	{
+		"index": "1",
+		"name": "Bitmap2",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	},
+	{
+		"index": "3",
+		"name": "Processing Code",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII",
+		"subfields":[
+			{
+			    "index": "01",
+				"name": "SubElem1 C3",
+				"lengthIndicator" : "fixed",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+			    "index": "02",
+				"name": "SubElem2 C3",
+				"lengthIndicator" : "fixed",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+			    "index": "03",
+				"name": "SubElem3 C3",
+				"lengthIndicator" : "fixed",
+				"length": "2",
+				"format": "ASCII"
+			}
+		]
+	},
+	{
+		"index": "4",
+		"name": "Transaction Amount",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "5",
+		"name": "Amount",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "7",
+		"name": "Transmission Date and Time",
+		"lengthIndicator" : "fixed",
+		"length": "10",
+		"format": "ASCII"
+	},
+	{
+		"index": "10",
+		"name": "Channel",
+		"lengthIndicator" : "fixed",
+		"length": "8",
+		"format": "ASCII"
+	},
+	{
+		"index": "11",
+		"name": "System Trace Audit Number",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "12",
+		"name": "Local Transaction Time",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "13",
+		"name": "Local Transaction Date",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "15",
+		"name": "Settlement Date",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "17",
+		"name": "Capture Date",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "18",
+		"name": "Giro del comercio",
+		"lengthIndicator" : "fixed",
+		"length": "4",
+		"format": "ASCII"
+	},
+	{
+		"index": "19",
+		"name": "Country",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "22",
+		"name": "Point of Service Entry Mode",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII",
+		"subfields":[
+			{
+			    "index": "01",
+				"name": "SubElem1 C22",
+				"lengthIndicator" : "fixed",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+			    "index": "02",
+				"name": "SubElem2 C22",
+				"lengthIndicator" : "fixed",
+				"length": "1",
+				"format": "ASCII"
+			}
+		]
+	},
+	{
+		"index": "23",
+		"name": "Card Sequence Number",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "25",
+		"name": "Point of Service Condition Code",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "32",
+		"name": "Acquiring Institution Code",
+		"lengthIndicator" : "LLvar",
+		"length": "11",
+		"format": "ASCII"
+	},
+	{
+		"index": "33",
+		"name": "Forwarding Institution Identification Code",
+		"lengthIndicator" : "LLvar",
+		"length": "11",
+		"format": "ASCII"
+	},
+	{
+		"index": "35",
+		"name": "Track 2 Data",
+		"lengthIndicator" : "LLvar",
+		"length": "37",
+		"format": "ASCII"
+	},
+	{
+		"index": "37",
+		"name": "Retrieval Reference Number",
+		"lengthIndicator" : "fixed",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "38",
+		"name": "Authorization Identification Response",
+		"lengthIndicator" : "fixed",
+		"length": "6",
+		"format": "ASCII"
+	},
+	{
+		"index": "39",
+		"name": "Response Code",
+		"lengthIndicator" : "fixed",
+		"length": "2",
+		"format": "ASCII"
+	},
+	{
+		"index": "41",
+		"name": "Card Acceptor Terminal Identification",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	},
+	{
+		"index": "42",
+		"name": "Card Acceptor Identification Code",
+		"lengthIndicator" : "fixed",
+		"length": "15",
+		"format": "ASCII"
+	},
+	{
+		"index": "43",
+		"name": "Card Acceptor Name/Location",
+		"lengthIndicator" : "fixed",
+		"length": "40",
+		"format": "ASCII"
+	},
+	{
+		"index": "44",
+		"name": "Additional Response Data",
+		"lengthIndicator" : "LLvar",
+		"length": "25",
+		"format": "ASCII"
+	},
+	{
+		"index": "48",
+		"name": "Additional Data Reatiler",
+		"lengthIndicator" : "LLLvar",
+		"length": "27",
+		"format": "ASCII"
+	},
+	{
+		"index": "49",
+		"name": "Transaction Currency Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "50",
+		"name": "Currency Code Settlement",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "51",
+		"name": "Currency Code Cardholder Billing",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "52",
+		"name": "Personal Identification Number",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	},
+	{
+		"index": "53",
+		"name": "Security Related Control Information",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	},
+	{
+		"index": "54",
+		"name": "Additional Amounts",
+		"lengthIndicator" : "LLLvar",
+		"length": "12",
+		"format": "ASCII"
+	},
+	{
+		"index": "55",
+		"name": "ICC � EMV Full Grade",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII",
+		"subfields":[
+			{
+				"name": "5F2A",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "71",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "72",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "82",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "84",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "91",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "95",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9A",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9C",
+				"length": "2",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F02",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F03",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F09",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F10",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F1A",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F1E",
+				"length": "8",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F26",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F27",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F33",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F34",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F35",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F36",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F37",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F41",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "BCD"
+			},
+			{
+				"name": "9F53",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F5B",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			},
+			{
+				"name": "9F6E",
+				"length": "4",
+				"lengthIndicator": "tag55",
+				"format": "HEXA"
+			}
+		],
+		"subfieldsName":"TAG"
+	},
+	{
+		"index": "58",
+		"name": "Datos Lealtad",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII"
+	},
+	{
+		"index": "59",
+		"name": "Datos Campana",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII"
+	},
+	{
+		"index": "60",
+		"name": "POS Terminal Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII"
+	},
+	{
+		"index": "61",
+		"name": "Card Issuer � Category-Response Code Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "19",
+		"format": "ASCII"
+	},
+	{
+		"index": "62",
+		"name": "POS Postal Code",
+		"lengthIndicator" : "LLLvar",
+		"length": "13",
+		"format": "ASCII"
+	},
+	{
+		"index": "63",
+		"name": "POS Additional Data",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII",
+		"subfields": [
+			{
+				"name": "header",
+				"lengthIndicator" : "fixed",
+				"length": "12",
+				"format": "ASCII"
+			},
+			{
+				"name": "Q1",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			}, 
+			{
+				"name": "Q2",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+				"name": "Q3",
+				"lengthIndicator" : "tokenISO",
+				"length": "4",
+				"format": "ASCII"
+			},
+			{
+				"name": "Q4",
+				"lengthIndicator" : "tokenISO",
+				"length": "8",
+				"format": "ASCII"
+			},
+			{
+				"name": "Q8",
+				"lengthIndicator" : "tokenISO",
+				"length": "30",
+				"format": "ASCII"
+			},
+			{
+				"name": "Q9",
+				"lengthIndicator" : "tokenISO",
+				"length": "238",
+				"format": "ASCII"
+			},
+			{
+				"name": "Q6",
+				"lengthIndicator" : "tokenISO",
+				"length": "6",
+				"format": "ASCII"
+			},
+			{
+				"name": "04",
+				"lengthIndicator" : "tokenISO",
+				"length": "20",
+				"format": "ASCII"
+			},
+			{
+				"name": "C0",
+				"lengthIndicator" : "tokenISO",
+				"length": "26",
+				"format": "ASCII"
+			},
+			{
+				"name": "C4",
+				"lengthIndicator" : "tokenISO",
+				"length": "12",
+				"format": "ASCII"
+			},
+			{
+				"name": "C5",
+				"lengthIndicator" : "tokenISO",
+				"length": "78",
+				"format": "ASCII"
+			},
+			{
+				"name": "C6",
+				"lengthIndicator" : "tokenISO",
+				"length": "80",
+				"format": "ASCII"
+			},
+			{
+				"name": "CE",
+				"lengthIndicator" : "tokenISO",
+				"length": "200",
+				"format": "ASCII"
+			},
+			{
+				"name": "CH",
+				"lengthIndicator" : "tokenISO",
+				"length": "40",
+				"format": "ASCII"
+			},
+			{
+				"name": "CA",
+				"lengthIndicator" : "tokenISO",
+				"length": "40",
+				"format": "ASCII"
+			},
+			{
+				"name": "CZ",
+				"lengthIndicator" : "tokenISO",
+				"length": "40",
+				"format": "ASCII"
+			},
+			{
+				"name": "B0",
+				"lengthIndicator" : "tokenISO",
+				"length": "48",
+				"format": "ASCII"
+			},
+			{
+				"name": "B1",
+				"lengthIndicator" : "tokenISO",
+				"length": "38",
+				"format": "ASCII"
+			},
+			{
+				"name": "B2",
+				"lengthIndicator" : "tokenISO",
+				"length": "158",
+				"format": "ASCII"
+			},
+			{
+				"name": "B3",
+				"lengthIndicator" : "tokenISO",
+				"length": "80",
+				"format": "ASCII"
+			},
+			{
+				"name": "B4",
+				"lengthIndicator" : "tokenISO",
+				"length": "20",
+				"format": "ASCII"
+			},
+			{
+				"name": "B5",
+				"lengthIndicator" : "tokenISO",
+				"length": "38",
+				"format": "ASCII"
+			},
+			{
+				"name": "B6",
+				"lengthIndicator" : "tokenISO",
+				"length": "260",
+				"format": "ASCII"
+			},
+			{
+				"name": "R1",
+				"lengthIndicator" : "tokenISO",
+				"length": "16",
+				"format": "ASCII"
+			},
+			{
+				"name": "R4",
+				"lengthIndicator" : "tokenISO",
+				"length": "20",
+				"format": "ASCII"
+			},
+			{
+				"name": "R7",
+				"lengthIndicator" : "tokenISO",
+				"length": "13",
+				"format": "ASCII"
+			},
+			{
+				"name": "R8",
+				"lengthIndicator" : "tokenISO",
+				"length": "62",
+				"format": "ASCII"
+			},
+			{
+				"name": "RJ",
+				"lengthIndicator" : "tokenISO",
+				"length": "50",
+				"format": "ASCII"
+			},
+			{
+				"name": "RG",
+				"lengthIndicator" : "tokenISO",
+				"length": "12",
+				"format": "ASCII"
+			},
+			{
+				"name": "RV",
+				"lengthIndicator" : "tokenISO",
+				"length": "332",
+				"format": "ASCII"
+			},
+			{
+				"name": "ER",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+				"name": "S3",
+				"lengthIndicator" : "tokenISO",
+				"length": "223",
+				"format": "ASCII"
+			},
+			{
+				"name": "ES",
+				"lengthIndicator" : "tokenISO",
+				"length": "60",
+				"format": "ASCII"
+			},
+			{
+				"name": "ET",
+				"lengthIndicator" : "tokenISO",
+				"length": "366",
+				"format": "ASCII"
+			},
+			{
+				"name": "EW",
+				"lengthIndicator" : "tokenISO",
+				"length": "538",
+				"format": "ASCII"
+			},
+			{
+				"name": "EX",
+				"lengthIndicator" : "tokenISO",
+				"length": "68",
+				"format": "ASCII"
+			},
+			{
+				"name": "EY",
+				"lengthIndicator" : "tokenISO",
+				"length": "172",
+				"format": "ASCII"
+			},
+			{
+				"name": "EZ",
+				"lengthIndicator" : "tokenISO",
+				"length": "98",
+				"format": "ASCII"
+			},
+			{
+				"name": "17",
+				"lengthIndicator" : "tokenISO",
+				"length": "24",
+				"format": "ASCII"
+			},
+			{
+				"name": "20",
+				"lengthIndicator" : "tokenISO",
+				"length": "22",
+				"format": "ASCII"
+			},
+			{
+				"name": "QS",
+				"lengthIndicator" : "tokenISO",
+				"length": "496",
+				"format": "ASCII"
+			},
+			{
+				"name": "QP",
+				"lengthIndicator" : "tokenISO",
+				"length": "47",
+				"format": "ASCII"
+			},
+			{
+				"name": "QO",
+				"lengthIndicator" : "tokenISO",
+				"length": "12",
+				"format": "ASCII"
+			},
+			{
+				"name": "QF",
+				"lengthIndicator" : "tokenISO",
+				"length": "28",
+				"format": "ASCII"
+			},
+			{
+				"name": "PO",
+				"lengthIndicator" : "tokenISO",
+				"length": "80",
+				"format": "ASCII"
+			},
+			{
+				"name": "PY",
+				"lengthIndicator" : "tokenISO",
+				"length": "60",
+				"format": "ASCII"
+			},
+			{
+				"name": "PS",
+				"lengthIndicator" : "tokenISO",
+				"length": "40",
+				"format": "ASCII"
+			},
+			{
+				"name": "PJ",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+				"name": "R0",
+				"lengthIndicator" : "tokenISO",
+				"length": "10",
+				"format": "ASCII"
+			},
+			{
+				"name": "QU",
+				"lengthIndicator" : "tokenISO",
+				"length": "551",
+				"format": "ASCII"
+			},
+			{
+				"name": "QV",
+				"lengthIndicator" : "tokenISO",
+				"length": "48",
+				"format": "ASCII"
+			},
+			{
+				"name": "QT",
+				"lengthIndicator" : "tokenISO",
+				"length": "69",
+				"format": "ASCII"
+			},
+			{
+				"name": "QN",
+				"lengthIndicator" : "tokenISO",
+				"length": "54",
+				"format": "ASCII"
+			},
+			{
+				"name": "17",
+				"lengthIndicator" : "tokenISO",
+				"length": "24",
+				"format": "ASCII"
+			},
+			{
+				"name": "20",
+				"lengthIndicator" : "tokenISO",
+				"length": "22",
+				"format": "ASCII"
+			},
+			{
+				"name": "R8",
+				"lengthIndicator" : "tokenISO",
+				"length": "62",
+				"format": "ASCII"
+			},
+			{
+				"name": "R7",
+				"lengthIndicator" : "tokenISO",
+				"length": "13",
+				"format": "ASCII"
+			},
+			{
+				"name": "RB",
+				"lengthIndicator" : "tokenISO",
+				"length": "13",
+				"format": "ASCII"
+			},
+			{
+				"name": "QH",
+				"lengthIndicator" : "tokenISO",
+				"length": "13",
+				"format": "ASCII"
+			},
+			{
+				"name": "TV",
+				"lengthIndicator" : "tokenISO",
+				"length": "13",
+				"format": "ASCII"
+			},
+			{
+				"name": "TM",
+				"lengthIndicator" : "tokenISO",
+				"length": "13",
+				"format": "ASCII"
+			},{
+				"name": "QR",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "DE",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "QX",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "RD",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "BM",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "FB",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "GC",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "GB",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "RE",
+				"lengthIndicator" : "tokenISO",
+				"length": "40",
+				"format": "ASCII"
+			},{
+				"name": "RZ",
+				"lengthIndicator" : "tokenISO",
+				"length": "100",
+				"format": "ASCII"
+			},{
+				"name": "QI",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "PC",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "PG",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "PA",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			},{
+				"name": "FH",
+				"lengthIndicator" : "tokenISO",
+				"length": "2",
+				"format": "ASCII"
+			}
+		],
+		"subfieldsName":"Token"
+	},
+	{
+		"index": "70",
+		"name": "Network Management Information Code",
+		"lengthIndicator" : "fixed",
+		"length": "3",
+		"format": "ASCII"
+	},
+	{
+		"index": "90",
+		"name": "Original Data Elements",
+		"lengthIndicator" : "fixed",
+		"length": "42",
+		"format": "ASCII",
+		"subfields": [
+			{
+				"name": "ISO Original",
+				"lengthIndicator" : "fixed",
+				"length": "4",
+				"format": "ASCII"
+			},
+			{
+				"name": "RRN Original C37",
+				"lengthIndicator" : "fixed",
+				"length": "12",
+				"format": "ASCII"
+			},
+			{
+				"name": "Fecha Local Original C13",
+				"lengthIndicator" : "fixed",
+				"length": "4",
+				"format": "ASCII"
+			},
+			{
+				"name": "Hora Local Original C12",
+				"lengthIndicator" : "fixed",
+				"length": "6",
+				"format": "ASCII"
+			},
+			{
+				"name": "ceros",
+				"lengthIndicator" : "fixed",
+				"length": "2",
+				"format": "ASCII"
+			},
+			{
+				"name": "Fecha Captura Original C17",
+				"lengthIndicator" : "fixed",
+				"length": "4",
+				"format": "ASCII"
+			},
+			{
+				"name": "espacios",
+				"lengthIndicator" : "fixed",
+				"length": "10",
+				"format": "ASCII"
+			}
+		]
+	},
+	{
+		"index": "100",
+		"name": "Receiving Institution Identification Code",
+		"lengthIndicator" : "LLvar",
+		"length": "11",
+		"format": "ASCII"
+	},
+	{
+		"index": "102",
+		"name": "Account Identification 1",
+		"lengthIndicator" : "LLvar",
+		"length": "28",
+		"format": "ASCII"
+	},
+	{
+		"index": "103",
+		"name": "Account Indentification 2",
+		"lengthIndicator" : "LLvar",
+		"length": "28",
+		"format": "ASCII"
+	},
+	{
+		"index": "110",
+		"name": "TR-31 Key",
+		"lengthIndicator" : "LLLvar",
+		"length": "999",
+		"format": "ASCII"
+	},
+	{
+		"index": "120",
+		"name": "PENDIENTE",
+		"lengthIndicator" : "LLLvar",
+		"length": "33",
+		"format": "ASCII"
+	},
+	{
+		"index": "121",
+		"name": "Private use 2",
+		"lengthIndicator" : "LLLvar",
+		"length": "20",
+		"format": "ASCII"
+	},
+	{
+		"index": "122",
+		"name": "Private use 4",
+		"lengthIndicator" : "LLLvar",
+		"length": "20",
+		"format": "ASCII"
+	},
+	{
+		"index": "123",
+		"name": "Private use 4",
+		"lengthIndicator" : "LLLvar",
+		"length": "20",
+		"format": "ASCII"
+	},
+	{
+		"index": "124",
+		"name": "Info text",
+		"lengthIndicator" : "LLLvar",
+		"length": "9",
+		"format": "ASCII"
+	},
+	{
+		"index": "125",
+		"name": "Network Management Information",
+		"lengthIndicator" : "LLLvar",
+		"length": "264",
+		"format": "ASCII"
+	},
+	{
+		"index": "126",
+		"name": "Issuer Trace ID",
+		"lengthIndicator" : "LLLvar",
+		"length": "38",
+		"format": "ASCII"
+	},
+	{
+		"index": "128",
+		"name": "Message Authentication Code, Secondary",
+		"lengthIndicator" : "fixed",
+		"length": "16",
+		"format": "ASCII"
+	}
+]
